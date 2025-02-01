@@ -256,9 +256,9 @@ const sections = [
   defineSimpleLikeSection('MagicName', /MagicName/, 'magic'),
   defineSimpleLikeSection('NpcName', /NpcName/, 'npc'),
   defineSimpleLikeSection('PlaceName', /PlaceName/, 'place'),
-  defineSimpleLikeSection('WeaponInfo', /WeaponInfo/, 'weapon'),
   defineItemLikeSection('WeaponName', /WeaponName/, 'weapon'),
   defineSimpleLikeSection('WeaponEffect', /WeaponEffect/, 'weapon'),
+  defineSimpleLikeSection('WeaponInfo', /WeaponInfo/, 'weapon'),
   defineSimpleLikeSection('NpcName', /NpcName/, 'npc'),
   defineSimpleLikeSection('PlaceName', /PlaceName/, 'place'),
   defineSimpleLikeSection('Armor Info', /ProtectorInfo/, 'armor'),
@@ -289,10 +289,6 @@ const sections = [
                     text
                       .split(/\n\[/)
                       .map((line, idx, lines) => {
-                        if (lines.length > 1) {
-                          console.log(idx, line);
-                        }
-
                         const match = line.match(/\[?(\d+)\]\s*((?:\n|.)*)/);
                         return match
                           ? { id: match[1], text: match[2].trim() }
@@ -335,9 +331,9 @@ const sections = [
     }),
   }),
   defineItemLikeSection('Tutorial Message', /TutorialTitle/, 'tutorial'),
-  defineSimpleLikeSection('Weapon Effect', /WeaponEffect/, 'weapon'),
-  defineSimpleLikeSection('Weapon Info', /WeaponInfo/, 'weapon'),
-  defineItemLikeSection('Weapon Name', /WeaponName/, 'weapon'),
+  // defineSimpleLikeSection('Weapon Effect', /WeaponEffect/, 'weapon'),
+  // defineSimpleLikeSection('Weapon Info', /WeaponInfo/, 'weapon'),
+  // defineItemLikeSection('Weapon Name', /WeaponName/, 'weapon'),
 ]; //  satisfies ReturnType<typeof defineSection<any, any, any>>[];
 
 // const sectionss = [
@@ -587,8 +583,16 @@ function htmlToEldenRingData(html: string): EldenRingParsedData {
       });
     });
 
+  // if done
+
   const parsed = processor.parse(html);
   processor.runSync(parsed);
+
+  if (currentSection) {
+    parseSection(currentSection.elements, currentSection, data);
+    currentSection = null;
+  }
+
   return data;
 }
 

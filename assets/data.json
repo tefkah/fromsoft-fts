@@ -11063,6 +11063,2784 @@
       "title": "Remembrance Duplication Menu",
       "description": "With the Remembrance Duplication menu, you can duplicate remembrances you've previously acquired.\n(This includes remembrances from which you've already drawn out power.)\nDuplication can only be performed once per mausoleum.\n[101000] <?keyControlCamera?>: ?keyActFullName@10?\n[101030] ?keyicon@15?: ?keyActName@15?\n[101040] ?keyicon@22?: ?keyActName@22?\n[101050] ?keyicon@23?: ?keyActName@23?\n[101080] ?keyicon@8?: ?keyActName@8?\n[101090] Hold <?keyMove?>+?keyicon@7?: Dash\n[101110] <?keyControlCamera?> while locked-on to a target: Change target\n[101120] ?keyicon@24?: Guard\n[101130] Materials can be used to craft items.\n[101150] ?keyicon@22? near a backturned enemy: Critical hit\n[101170] ?keyicon@27?: HUD display\n[101180] ?keyicon@8? during mounted jump: Double jump",
       "type": "tutorial"
+    },
+    {
+      "id": "110000",
+      "title": "Unarmed",
+      "description": "No armament equipped.\nBare fists will be used to attack.",
+      "type": "weapon"
+    },
+    {
+      "id": "1000000",
+      "title": "Dagger",
+      "description": "A standard dagger with a straight blade.\nThough modest in reach and capacity for harm, this weapon is light enough to jab in rapid succession and delivers devastating critical hits.",
+      "type": "weapon"
+    },
+    {
+      "id": "1010000",
+      "title": "Black Knife",
+      "description": "Dagger once belonging to one of the assassins who murdered Godwyn the Golden on the Night of the Black Knives.\nA ritual performed on the oddly misshapen blade imbued it with the power of the stolen Rune of Death.",
+      "type": "weapon"
+    },
+    {
+      "id": "1020000",
+      "title": "Parrying Dagger",
+      "description": "A knife with curved handguards.\nDesigned to parry, turning foes' attacks against them.\nFor masters of combat who anticipate every enemy strike and counter accordingly, this weapon is all they need.",
+      "type": "weapon"
+    },
+    {
+      "id": "1030000",
+      "title": "Miséricorde",
+      "description": "Dagger favored by military physicians in white.\nThe pointed blade is hard and sharp, making critical hits especially potent.\nMedicine is mercy, and mercy upon the battlefield is ruthless. Beware the killers clothed as men of compassion.",
+      "type": "weapon"
+    },
+    {
+      "id": "1040000",
+      "title": "Reduvia",
+      "description": "Jagged dagger with a distinctive curved blade.\nUsed by the noble servants of the Lord of Blood.\nThis dagger rips the flesh as it enters, inflicting blood loss with sickening efficacy. A proud testament to the success of its vicious design, this weapon is perpetually coated in blood. ",
+      "type": "weapon"
+    },
+    {
+      "id": "1050000",
+      "title": "Crystal Knife",
+      "description": "A knife made by sharpening hard crystal.\nSignature weapon of glintstone miners.\nUsed as tool to extract glintstone from broken rock, and as such a faint magic enwreathes the blade.",
+      "type": "weapon"
+    },
+    {
+      "id": "1060000",
+      "title": "Celebrant's Sickle",
+      "description": "Sickle decorated with flowers and many-colored fabrics. Ceremonial tool used by dancers during the festivities of Dominula. Its attacks can slip through an enemy's guard.\nCrafted from human bone.\nGrants trace amounts of runes on landing attacks.",
+      "type": "weapon"
+    },
+    {
+      "id": "1070000",
+      "title": "Glintstone Kris",
+      "description": "Ritual blade once presented to Leyndell by the Academy of Raya Lucaria to celebrate their newfound peace. Though the weapon is embedded with precious glintstones and features Erdtree ornamentation, the undulating blade is symbolic of an ancient ritual.",
+      "type": "weapon"
+    },
+    {
+      "id": "1080000",
+      "title": "Scorpion's Stinger",
+      "description": "Dagger fashioned from a great scorpion's tail, glistening with scarlet rot.\nA ceremonial tool used by heretics, crafted from the relic of a sealed outer god.",
+      "type": "weapon"
+    },
+    {
+      "id": "1090000",
+      "title": "Great Knife",
+      "description": "Large knife with a broad, curved blade.\nThis weapon is designed to slash and rend, inflicting blood loss upon the recipient.",
+      "type": "weapon"
+    },
+    {
+      "id": "1100000",
+      "title": "Wakizashi",
+      "description": "Short sword with a tempering pattern on the blade.\nA weapon unique to warriors of the Land of Reeds.\nAfflicts targets with blood loss.\nThese swords are considered auxiliary weapons.\nYet, one man is known to wield this weapon in his left hand while using a full-sized katana in his right. A demonic swordsman known only as Okina.",
+      "type": "weapon"
+    },
+    {
+      "id": "1110000",
+      "title": "Cinquedea",
+      "description": "Short sword given to high ranking clergymen of Farum Azula.\nRaises potency of bestial incantations.\nThe design celebrates a beast's five fingers, symbolic of the intelligence once granted upon their kind.",
+      "type": "weapon"
+    },
+    {
+      "id": "1130000",
+      "title": "Ivory Sickle",
+      "description": "Sickle fashioned from ivory.\nWeapon carried by aged Albinaurics.\nThese weapons are evidence of their dedication to the Haligtree, despite never having entered its presence.",
+      "type": "weapon"
+    },
+    {
+      "id": "1140000",
+      "title": "Bloodstained Dagger",
+      "description": "Dagger with a bloodstained blade.\nAfflicts targets with blood loss.\nAs blood darkened the dagger through repeated slashing and stabbing, its blade only grew sharper and harder.",
+      "type": "weapon"
+    },
+    {
+      "id": "1150000",
+      "title": "Erdsteel Dagger",
+      "description": "An erdsteel dagger with a grass crest engraved upon its blade. Carried by the Erdtree royalty for self-defense in times of peace.\nThough forged to a high standard, the weapon is difficult to wield.\nAttack power also scales with faith.",
+      "type": "weapon"
+    },
+    {
+      "id": "1160000",
+      "title": "Blade of Calling",
+      "description": "Dagger given to one who set out on a journey to fulfill her duty long ago. The power of its former owner, the kindling maiden, is still apparent.\nThe one who walks alongside flame,\nShall one day meet the road of Destined Death.",
+      "type": "weapon"
+    },
+    {
+      "id": "2000000",
+      "title": "Longsword",
+      "description": "A straight sword with a double-edged blade.\nIn addition to its reliable standard damage, this weapon also boasts powerful piercing attacks. A superbly balanced armament.",
+      "type": "weapon"
+    },
+    {
+      "id": "2010000",
+      "title": "Short Sword",
+      "description": "A short straight sword with a short blade.\nIn addition to its reliable standard damage, this weapon also boasts powerful piercing attacks.\nLightweight amongst straight swords, this weapon is easy to wield, requiring only humble attributes.",
+      "type": "weapon"
+    },
+    {
+      "id": "2020000",
+      "title": "Broadsword",
+      "description": "A straight sword with a wide blade, suited to slashing attacks.\nHorizontal swings boast wide attack range, making it easier to connect with foes.",
+      "type": "weapon"
+    },
+    {
+      "id": "2030000",
+      "title": "Royal Soldier Straight Sword",
+      "description": "A straight sword with a wide blade.\nEffective for slashing attacks.\nBroad horizontal swings widen the attack range, making it easier to connect with foes.",
+      "type": "weapon"
+    },
+    {
+      "id": "2040000",
+      "title": "Lordsworn's Straight Sword",
+      "description": "Well-crafted straight sword with an illustrious\ndesign, wielded by regulars of a lord's army.\nThough blackened and damaged by years of use,\nit appears to have otherwise been kept in a\nserviceable condition, despite the soldiers having\nlong since lost their minds.",
+      "type": "weapon"
+    },
+    {
+      "id": "2050000",
+      "title": "Weathered Straight Sword",
+      "description": "Straight sword with a rather short but wide blade.\nSimple to wield, it was known as the sword of the people.\nThough the Erdtree styling is still visible, time has not been kind to this sword, now merely a shadow of its former self.",
+      "type": "weapon"
+    },
+    {
+      "id": "2060000",
+      "title": "Ornamental Straight Sword",
+      "description": "Slender straight sword patterned after an antique ornament.\nSuperior swordsmen prefer to wield one in each hand.\nAfter falling from grace, the dregs of the golden lineage sought power and purpose in the past.",
+      "type": "weapon"
+    },
+    {
+      "id": "2070000",
+      "title": "Golden Epitaph",
+      "description": "A sword made to commemorate the death of Godwyn the Golden, first of the demigods to die.\nInfused with the humble prayer of a young boy; \"O brother, lord brother, please die a true death.\"",
+      "type": "weapon"
+    },
+    {
+      "id": "2080000",
+      "title": "Nox Flowing Sword",
+      "description": "A grim weapon wielded by swordsmen of the Eternal City, this shotel has a blade as fine as a needle.\nForged from the liquid metal of a Silver Tear, it is thoroughly tempered until hardened. ",
+      "type": "weapon"
+    },
+    {
+      "id": "2090000",
+      "title": "Inseparable Sword",
+      "description": "Sword forged by compounding silver and gold.\nA sacred weapon to hunt Those Who Live in Death.\nDeals holy damage. \nThe inseparable twins found solace in the Golden Order, the only institution not to revile them as accursed beings.",
+      "type": "weapon"
+    },
+    {
+      "id": "2090100",
+      "title": "Heavy Inseparable Sword",
+      "description": "Sharp sword used by D, Knight of the Golden Order.\nThe blade was forged with a mix of silver and brass.",
+      "type": "weapon"
+    },
+    {
+      "id": "2110000",
+      "title": "Coded Sword",
+      "description": "Hidden sword once granted to the Tarnished of the Roundtable by the Two Fingers. A formless cipher comprises its blade, which deals holy damage no shield can repel. Champions would gather at the Roundtable Hold in days long past, when the Two Fingers were masters of oration, their flesh yet full of vigor.",
+      "type": "weapon"
+    },
+    {
+      "id": "2140000",
+      "title": "Sword of Night and Flame",
+      "description": "Storied sword and treasure of Caria Manor.\nOne of the legendary armaments.\nAstrologers, who preceded the sorcerers, established themselves in mountaintops that nearly touched the sky, and considered the Fire Giants their neighbors.",
+      "type": "weapon"
+    },
+    {
+      "id": "2150000",
+      "title": "Crystal Sword",
+      "description": "Sword fashioned from pure crystal; a deed impossible for a human. Enwreathed with powerful magic, its attack scales with intelligence. The inscrutable Crystalians have but one clear purpose; to safeguard their crystals unto the end. One theory posits that they yearn for the return of their creator who will carve for them new brethren.",
+      "type": "weapon"
+    },
+    {
+      "id": "2180000",
+      "title": "Carian Knight's Sword",
+      "description": "Straight sword embedded with a blue glintstone.\nWeapon of knights sworn to Carian royalty.\nThese knights' swords could serve as catalysts, letting them wield sorcerous battle skills. Despite numbering fewer than twenty, this power made them a match for even the champions of gold in battle.",
+      "type": "weapon"
+    },
+    {
+      "id": "2190000",
+      "title": "Sword of St. Trina",
+      "description": "Silver sword carried by clerics of St. Trina.\nInflicts sleep ailment upon foes.\nSt. Trina is an enigmatic figure. Some say she is a comely young girl, others are sure he is a boy. The only certainty is that their appearance was as sudden as their disappearance.",
+      "type": "weapon"
+    },
+    {
+      "id": "2200000",
+      "title": "Miquellan Knight's Sword",
+      "description": "Sword forged by servants of Miquella of the Haligtree, with a design modeled after those carried by Carian knights. Instead of glintstone however, amber from the Haligtree is embedded in the blade.\nA sumptuous piece, yet it has never been offered to any knight—an ill-starred sword with no master.",
+      "type": "weapon"
+    },
+    {
+      "id": "2210000",
+      "title": "Cane Sword",
+      "description": "Beloved sword of an aged knight whose last quest was long behind him, repurposed into a walking stick. The tip is rather worn.\nThough bent of back and without the brawn required even to raise the sword aloft, still he wished to meet his end with weapon in hand. ",
+      "type": "weapon"
+    },
+    {
+      "id": "2220000",
+      "title": "Regalia of Eochaid",
+      "description": "Treasured sword of Eochaid, a lesser, long-vanished domain.\nThe copper coloration is not to be confused for rust, but is a conduit for its wielder to move it by their will alone.\nSwords of Eochaid dance through the skies.",
+      "type": "weapon"
+    },
+    {
+      "id": "2230000",
+      "title": "Noble's Slender Sword",
+      "description": "Narrow blade carried by wandering nobles.\nMade to be easy to wield.\nDaubed with gold from tip to tail, it should fetch a good sum.",
+      "type": "weapon"
+    },
+    {
+      "id": "2240000",
+      "title": "Warhawk's Talon",
+      "description": "Talon-swords are affixed to the legs of Stormveil's warhawks, but this one has been repurposed for human use.\nThe blade is thin and lightweight so as not to obstruct the hawk's mobility.",
+      "type": "weapon"
+    },
+    {
+      "id": "2250000",
+      "title": "Lazuli Glintstone Sword",
+      "description": "A sword with a glintstone in its handguards. Wielded by scholars of the Lazuli Conspectus who seek to master Carian sorcery.\nDeals magic damage.\nApparently once used as a staff of sorcery, this sword is made of wood.",
+      "type": "weapon"
+    },
+    {
+      "id": "2260000",
+      "title": "Rotten Crystal Sword",
+      "description": "Sword fashioned from pure crystal; a deed impossible for a human.\nEnwreathed with powerful magic, its attack scales with intelligence.",
+      "type": "weapon"
+    },
+    {
+      "id": "3000000",
+      "title": "Bastard Sword",
+      "description": "A large sword with a straight blade. This heavy sword is usually wielded with two hands, but for those with enough strength, one is sufficient.\nThe hefty blade can be swung into multiple foes\nat once thanks to the broad, sweeping attack,\nmaking fending off crowds all the easier.",
+      "type": "weapon"
+    },
+    {
+      "id": "3010000",
+      "title": "Forked Greatsword",
+      "description": "Oddly shaped greatsword wielded by imps.\nThe gently undulating forked blade is known as an \"imp's tongue\" and causes blood loss.",
+      "type": "weapon"
+    },
+    {
+      "id": "3020000",
+      "title": "Iron Greatsword",
+      "description": "Greatsword with a blade of unusually thick steel.\nA coarse weapon to which polishing is a foreign concept.\nWeighty even among others of its class, the impact of each strike is sure to be felt.",
+      "type": "weapon"
+    },
+    {
+      "id": "3030000",
+      "title": "Lordsworn's Greatsword",
+      "description": "Well-crafted straight sword with an illustrious\ndesign, wielded by regulars of a lord's army.\nThough blackened and damaged by years of use, it appears to have otherwise been kept in a serviceable condition, despite the soldiers having long since lost their minds.",
+      "type": "weapon"
+    },
+    {
+      "id": "3040000",
+      "title": "Knight's Greatsword",
+      "description": "Greatsword bestowed upon skilled swordsmen in the demigods' service, and yet had no rank or title.\nFeaturing a long grip enabling dual-handed use, this weapon was designed to dispatch larger foes. Being charged with such a duty was undoubtedly a great honor.",
+      "type": "weapon"
+    },
+    {
+      "id": "3050000",
+      "title": "Flamberge",
+      "description": "Greatsword featuring a flame-like undulation.\nShreds enemy flesh, inducing blood loss.\nScarlet rot is kept at bay with flame at Redmane Castle, and as such, this beloved sword of Jerren's eventually became the symbol of the castle itself.",
+      "type": "weapon"
+    },
+    {
+      "id": "3060000",
+      "title": "Ordovis's Greatsword",
+      "description": "Greatsword of Ordovis, one of the two honored as foremost among the Crucible Knights.\nThis sword is imbued with an ancient holy essence.\nIts red tint exemplifies the nature of primordial gold, said to be close in nature to life itself.",
+      "type": "weapon"
+    },
+    {
+      "id": "3070000",
+      "title": "Alabaster Lord's Sword",
+      "description": "Greatsword forged from a blue-white meteoric ore.\nThe blade conceals gravity-manipulating magic.\nA weapon unique to the Alabaster Lords, a race of ancients with skin of stone who were said to have risen to life when a meteor struck long ago.",
+      "type": "weapon"
+    },
+    {
+      "id": "3080000",
+      "title": "Banished Knight's Greatsword",
+      "description": "A finely-crafted greatsword intricately engraved with an ancient motif.\nGiven to knights who, whether by misfortune or misdeed, were forced to abandon their homes.\nMost of these knights were sent to the fringes, where they were forced to start anew with only despair for company.",
+      "type": "weapon"
+    },
+    {
+      "id": "3090000",
+      "title": "Dark Moon Greatsword",
+      "description": "A Moon Greatsword, bestowed by a Carian queen upon her spouse to honor long-standing tradition.\nOne of the legendary armaments.\nRanni's sigil is a full moon, cold and leaden, and this sword is but a beam of its light.",
+      "type": "weapon"
+    },
+    {
+      "id": "3100000",
+      "title": "Sacred Relic Sword",
+      "description": "Sword wrought from the remains of a god who should have lived a life eternal.\nThoughts on what the weapon portends are many and varied. Some consider it the mark of a great sin, or a sign of great devastation. Some think it as the end of an age, while others; the beginning.",
+      "type": "weapon"
+    },
+    {
+      "id": "3130000",
+      "title": "Helphen's Steeple",
+      "description": "Greatsword patterned after the black steeple of the Helphen, the lampwood which guides the dead of the spirit world.\nThe lamplight is similar to grace in appearance, only it is said that it can only be seen by those who met their death in battle.",
+      "type": "weapon"
+    },
+    {
+      "id": "3140000",
+      "title": "Blasphemous Blade",
+      "description": "Sacred sword of Rykard, Lord of Blasphemy.\nRemains of the countless heroes he has devoured writhe upon the surface of this blade.\nNow they share the same blood, bound together as family.\nSome HP is restored upon defeating an enemy.",
+      "type": "weapon"
+    },
+    {
+      "id": "3150000",
+      "title": "Marais Executioner's Sword",
+      "description": "Storied sword of House Marais, the family of executioners who presided over the Shaded Castle.\nOne of the legendary armaments.\nElemer of the Briar, the Bell Bearing Hunter, snatched the sword from the site of his looming execution, and furnished it with battle skills from his home of Eochaid.",
+      "type": "weapon"
+    },
+    {
+      "id": "3160000",
+      "title": "Sword of Milos",
+      "description": "Sinister greatsword fashioned from a giant's backbone. The spines along each side of the blade have been tapered to a fine point and mete out wounds like a lopsided saw-blade.\nMilos was undersized for a giant, and was viewed as sullied and terribly grotesque.",
+      "type": "weapon"
+    },
+    {
+      "id": "3160100",
+      "title": "Heavy Sword of Milos",
+      "description": "Greatsword fashioned from the strong spine of\na dragon. The fine, serrated blade lacerates\nits prey, causing severe hemorrhaging.",
+      "type": "weapon"
+    },
+    {
+      "id": "3170000",
+      "title": "Golden Order Greatsword",
+      "description": "Greatsword made of light, modeled after the Elden Ring itself. Forged by King Consort Radagon to proudly\nsymbolize the tenets of the Golden Order.\nOne of the legendary armaments.\nTelltale signs betray that this was once the greatsword bequeathed to him by his first wife, Rennala.",
+      "type": "weapon"
+    },
+    {
+      "id": "3180000",
+      "title": "Claymore",
+      "description": "A large sword with a long, straight blade. This heavy sword is usually wielded with two hands, but for those with enough strength, one is sufficient.\nIn addition to the heavy sweeping attacks, it can also make a heavy piercing thrust, making this a versatile weapon.",
+      "type": "weapon"
+    },
+    {
+      "id": "3190000",
+      "title": "Gargoyle's Greatsword",
+      "description": "Bronze greatsword wielded by Valiant Gargoyle.\nJust like the wielder, the missing parts have been mended with corpse wax; a patchwork of champions.",
+      "type": "weapon"
+    },
+    {
+      "id": "3200000",
+      "title": "Death's Poker",
+      "description": "Barbed rod carried by Deathbirds.\nThe birds are graveyard fire keepers; it is said they rake out the ashen remains of the dead from their kilns.",
+      "type": "weapon"
+    },
+    {
+      "id": "3210000",
+      "title": "Gargoyle's Blackblade",
+      "description": "Bronze greatsword wielded by Valiant Gargoyle, mended with blackened corpse wax.\nDeals holy damage.\nSuch is the mark of those who serve Maliketh, the Black Blade.",
+      "type": "weapon"
+    },
+    {
+      "id": "3210100",
+      "title": "Heavy Gargoyle's Blackblade",
+      "description": "Greatsword wielded by the gargoyles\nserving under Maliketh.",
+      "type": "weapon"
+    },
+    {
+      "id": "4000000",
+      "title": "Greatsword",
+      "description": "A coarse iron lump of an ultra greatsword.\nMows down foes by utilizing its incredible weight.\nThough handling it likely requires the wielder to have surpassed the realm of the merely human, it is precisely for this reason the weapon is used to slaughter even inhuman foes.",
+      "type": "weapon"
+    },
+    {
+      "id": "4010000",
+      "title": "Watchdog's Greatsword",
+      "description": "Stone greatsword wielded by Erdtree Burial Watchdogs.\nThough decorated with the watchman's eye, the pupil was taken by graverobbers and is now hollow, leaving this sword a mere lump of stone.",
+      "type": "weapon"
+    },
+    {
+      "id": "4020000",
+      "title": "Maliketh's Black Blade",
+      "description": "Maliketh's black blade which once harbored the power of the Rune of Death. A sad shadow of its former glory.\nAfter a fragment of Death was stolen on that fateful night, Maliketh bound the blade within his own flesh, such that none might ever rob Death again.",
+      "type": "weapon"
+    },
+    {
+      "id": "4030000",
+      "title": "Troll's Golden Sword",
+      "description": "Sword given to the giants who fought for the Erdtree during the War against the Giants long ago.\nThough the giants have lost their minds, they stay inseparable from their swords that are in sad shape—such that the gold plating had flaked away.",
+      "type": "weapon"
+    },
+    {
+      "id": "4040000",
+      "title": "Zweihander",
+      "description": "Just about the largest sword a mere man is capable of swinging.\nTrue to its name, it is designed to be wielded in both hands, but those of merely ordinary strength will still struggle to do so.\nThe long blade is heavy and sharp, sending foes reeling back with its broader strokes, while also capable of a devastating piercing thrust.",
+      "type": "weapon"
+    },
+    {
+      "id": "4050000",
+      "title": "Starscourge Greatsword",
+      "description": "Curved greatswords of black steel wielded by General Radahn.\nA pair of weapons decorated with a lion mane motif.\nRadahn earned considerable renown as the Starscourge in his youth, and it is said that it was during this time he engraved the gravity crest upon these blades.",
+      "type": "weapon"
+    },
+    {
+      "id": "4060000",
+      "title": "Royal Greatsword",
+      "description": "Greatsword decorated in royal Carian style.\nFavored weapon of Blaidd the Half-Wolf.\nIn defiance of the fate he was born to, Blaidd swore to serve no master but Ranni. As proof, the sword was imbued with a cold magic at the moment the oath was sworn.",
+      "type": "weapon"
+    },
+    {
+      "id": "4070000",
+      "title": "Godslayer's Greatsword",
+      "description": "Sacred sword of the Dusk-Eyed Queen who controlled the Godskin Apostles before her defeat at the hands of Maliketh.\nThe black flames wielded by the apostles are channeled from this sword.",
+      "type": "weapon"
+    },
+    {
+      "id": "4080000",
+      "title": "Ruins Greatsword",
+      "description": "Originally rubble from a ruin which fell from the sky, this surviving fragment was honed into a weapon.\nOne of the legendary armaments.\nThe ruin it came from crumbled when struck by a meteorite, as such this weapon harbors its destructive power.",
+      "type": "weapon"
+    },
+    {
+      "id": "4100000",
+      "title": "Grafted Blade Greatsword",
+      "description": "The storied sword of Castle Morne. A revenger's weapon, it is burdened with oceans of anger and regret.\nOne of the legendary armaments.\nA lone surviving champion from a country now vanished was so determined to continue fighting that he claimed the swords of an entire clan of warriors.",
+      "type": "weapon"
+    },
+    {
+      "id": "4110000",
+      "title": "Troll Knight's Sword",
+      "description": "Greatsword embedded with a blue glintstone.\nWeapon of the trolls in service to the royal family of Caria. Called into service when the Queen invoked an oath they swore, the trolls are treated as true knights of Caria, and fight arm in arm with their human comrades.",
+      "type": "weapon"
+    },
+    {
+      "id": "5000000",
+      "title": "Estoc",
+      "description": "Large piercing sword with a long, hard bladed edge which is also capable of slashing attacks.\nFor its large size, it can be wielded rather nimbly, leaving little opportunity for the enemy to counter.",
+      "type": "weapon"
+    },
+    {
+      "id": "5010000",
+      "title": "Cleanrot Knight's Sword",
+      "description": "Piercing sword of the Cleanrot Knights who fought alongside Malenia, Blade of Miquella.\nMainly used as a backup weapon, in combination with a long-handled armament.",
+      "type": "weapon"
+    },
+    {
+      "id": "5020000",
+      "title": "Rapier",
+      "description": "A piercing sword with a sharp, slender blade.\nIn addition to this weapon's thrusting attack prowess, it also boasts the ability to be used while guarding with a shield.\nAs one of the smaller piercing swords, quick successive thrusts are easy to perform, but without a cutting edge, it cannot be used for slashing attacks.",
+      "type": "weapon"
+    },
+    {
+      "id": "5030000",
+      "title": "Rogier's Rapier",
+      "description": "Piercing sword of superior quality, featuring intricate ornamentation.\nSignature weapon of the sorcerer Rogier.\nHigh dexterity is required to wield the blade to its full potential, but mastery is a sight to behold, characterized by a flowing style which excels in successive attacks.",
+      "type": "weapon"
+    },
+    {
+      "id": "5040000",
+      "title": "Antspur Rapier",
+      "description": "Spur of a giant ant which has been fashioned into a rapier. The blade drips with scarlet rot.\nScarlet rot is an old legend, of which Maleigh Marais of the Shaded Castle was a private believer. And indeed, he eventually found his own personal goddess.",
+      "type": "weapon"
+    },
+    {
+      "id": "5050000",
+      "title": "Frozen Needle",
+      "description": "A razor-thin piercing blade of ice.\nForged by Iji, the Carian Royal Blacksmith.\nCan inflict frost upon enemies, and launch its blade with a strong attack. The blade immediately regenerates.",
+      "type": "weapon"
+    },
+    {
+      "id": "5060000",
+      "title": "Noble's Estoc",
+      "description": "Estoc carried by wandering nobles.\nMade to be easy to wield.\nDaubed with gold from tip to tail, it should fetch a good sum.",
+      "type": "weapon"
+    },
+    {
+      "id": "6000000",
+      "title": "Bloody Helice",
+      "description": "Ominous piercing sword with a winding blade.\nCarried by the noble servants of the Lord of Blood.\nDesigned to bore into flesh, causing severe blood loss at the wound. The extracted blood trickles gracefully down the length of the blade.",
+      "type": "weapon"
+    },
+    {
+      "id": "6010000",
+      "title": "Godskin Stitcher",
+      "description": "Elegant piercing sword with a celadon colored blade wielded by Godskin Nobles.\nThe nobles possess skill with the sword unmatched by any lowborn. Despite its size, successive attacks from this weapon are swifter than the eye can follow.",
+      "type": "weapon"
+    },
+    {
+      "id": "6020000",
+      "title": "Great Épée",
+      "description": "Large rapier featuring a thin, sharp blade.\nCommonly used in life or death duels.\nLike its smaller counterparts, it is made for thrusting attacks, and can be used while guarding with a shield.",
+      "type": "weapon"
+    },
+    {
+      "id": "6040000",
+      "title": "Dragon King's Cragblade",
+      "description": "Piercing Gravel Stone sword containing primeval lightning.\nA portion of the Dragonlord's power, gained from a remembrance.\nThis weapon commands great power over the paltry, mortal dragons of today.",
+      "type": "weapon"
+    },
+    {
+      "id": "7000000",
+      "title": "Falchion",
+      "description": "A curved sword with a single-sided blade.\nDelivers slashing attacks with its sharp blade, but is ineffective against thick armor and hides covered in tough scales.\nWielders of the weapon employ a unique style that enhances attacks with spinning motions.",
+      "type": "weapon"
+    },
+    {
+      "id": "7010000",
+      "title": "Beastman's Curved Sword",
+      "description": "Curved sword forged of dull iron wielded by the beastmen of Farum Azula.\nThe blade is heavy but well-balanced. Comparatively easy to wield for the damage it delivers.",
+      "type": "weapon"
+    },
+    {
+      "id": "7020000",
+      "title": "Shotel",
+      "description": "Curved sword with a severely hooked blade. Its attacks can slip through an enemy's guard.\nMade to hunt down humans, this weapon requires high dexterity to wield effectively.",
+      "type": "weapon"
+    },
+    {
+      "id": "7030000",
+      "title": "Shamshir",
+      "description": "Curved sword with a thin blade of ample length.\nLight of weight despite its larger size, its slicing attacks come in rapid succession.\nA devastatingly powerful weapon in the hands of a skilled swordsman.",
+      "type": "weapon"
+    },
+    {
+      "id": "7040000",
+      "title": "Bandit's Curved Sword",
+      "description": "Curved sword with a light, crescent-shaped blade.\nUsed by the bandits who ran rampant in the wake of the Shattering.\nMost of the blade is now darkened and covered in rust, but with enough dexterity this weapon may still stand up to some use.",
+      "type": "weapon"
+    },
+    {
+      "id": "7050000",
+      "title": "Magma Blade",
+      "description": "Curved sword with a blade fashioned from the lava of Mt. Gelmir.\nAn armament of the man-serpents, impossible for a human to have made.\nDeals fire damage.",
+      "type": "weapon"
+    },
+    {
+      "id": "7060000",
+      "title": "Flowing Curved Sword",
+      "description": "Legends speak of a master of the sword garbed in blue, and his curved blade that was patterned after flowing water.\nStrong attack unleashes a series of strikes akin to a dance, offering a glimpse into the legend.",
+      "type": "weapon"
+    },
+    {
+      "id": "7070000",
+      "title": "Wing of Astel",
+      "description": "Sword fashioned from a delicate wing, suffused with the magic of the stars.\nStrong attack unleashes a wave of enchanted light.\nCrafted from a relic of the Naturalborn of the Void who is said to have assailed the Eternal City.",
+      "type": "weapon"
+    },
+    {
+      "id": "7080000",
+      "title": "Scavenger's Curved Sword",
+      "description": "Unique curved sword, notched like shark's teeth.\nWeapon carried by corpse pillagers who prowl the sites of old battles.\nThe blade is tacky with blood and covered in hefty nicks, making it totally uneven. Life can be sinister indeed.",
+      "type": "weapon"
+    },
+    {
+      "id": "7090000",
+      "title": "Sharktooth Curved Sword",
+      "description": "Unique curved sword, notched like a shark's tooth.\nStubborn bloodstains cling to the blade, which was\nonce used to cut the horns from countless Omen.",
+      "type": "weapon"
+    },
+    {
+      "id": "7100000",
+      "title": "Eclipse Shotel",
+      "description": "Storied sword and treasure of Castle Sol that depicts an eclipsed sun drained of color.\nOne of the legendary armaments.\nIn Sol, the sight of an eclipse inspires a dreadful awe, preventing an onlooker from averting his gaze.",
+      "type": "weapon"
+    },
+    {
+      "id": "7110000",
+      "title": "Serpent-God's Curved Sword",
+      "description": "Curved sword fashioned in the image of an ancient serpent deity and tool of a forgotten religion practiced on Mt. Gelmir.\nFormerly used to offer up sacrifices, this sword restores HP upon slaying an enemy.",
+      "type": "weapon"
+    },
+    {
+      "id": "7120000",
+      "title": "Mantis Blade",
+      "description": "A curved sword with a blade at both ends wielded by the Cemetery Shades, the insect-ridden grave keepers.\nThe blade is thin and sharp, and strong attack unleashes a far-reaching slash.",
+      "type": "weapon"
+    },
+    {
+      "id": "7140000",
+      "title": "Scimitar",
+      "description": "A curved sword with a single-sided blade.\nDelivers slashing attacks with its sharp blade, but is ineffective against thick armor and hides covered in tough scales.\nSmaller in size than most curved swords, it carves into enemies with quick, sharp cuts.",
+      "type": "weapon"
+    },
+    {
+      "id": "7150000",
+      "title": "Grossmesser",
+      "description": "Curved sword boasting a large blade.\nThis weapon is designed to make use of its weight in combination with its sharp cutting edge.\nA thoroughly reliable choice of weapon for those who can master its particulars.",
+      "type": "weapon"
+    },
+    {
+      "id": "8010000",
+      "title": "Onyx Lord's Greatsword",
+      "description": "Greatsword forged from golden-hued meteoric ore.\nThe blade conceals gravity-manipulating magic.\nA weapon unique to the Onyx Lords, a race of ancients with skin of stone who were said to have risen to life when a meteor struck long ago.",
+      "type": "weapon"
+    },
+    {
+      "id": "8020000",
+      "title": "Dismounter",
+      "description": "This curved greatsword wielded by the brawny sellswords of Kaiden combines the blade of a scimitar with the heft of a hatchet.\nA difficult to handle weapon that demands much of the wielder's strength and dexterity, but with practice and ability, it can serve as a versatile weapon even on horseback.",
+      "type": "weapon"
+    },
+    {
+      "id": "8030000",
+      "title": "Bloodhound's Fang",
+      "description": "Curved greatsword with a gently undulating blade wielded by Bloodhound Knights.\nA fearsome blade capable of brutal airborne attacks.",
+      "type": "weapon"
+    },
+    {
+      "id": "8040000",
+      "title": "Magma Wyrm's Scalesword",
+      "description": "Curved greatsword wielded by Magma Wyrms. The shape resembles a dragon's jaw and is covered in hard scales.\nIt's said these land-bound dragons were once humans heroes who partook in dragon communion, a grave transgression for which they were cursed to crawl the earth upon their bellies, shadows of their former selves.",
+      "type": "weapon"
+    },
+    {
+      "id": "8050000",
+      "title": "Zamor Curved Sword",
+      "description": "Weapon wielded by the knights of Zamor who earned great renown during the War against the Giants.\nIn apparent devotion to winter, the curved blade is styled after an icy wind and imbued with a powerful frost effect.",
+      "type": "weapon"
+    },
+    {
+      "id": "8060000",
+      "title": "Omen Cleaver",
+      "description": "Heavy-bladed curved sword of colossal size awarded to Omen as a tool of war. This weapon is made to take advantage of brute strength.\nThe pattern etched upon the blade is the remnant of a deteriorative malediction. Indeed, when bestowing a weapon, preparations must be made for taking it away.",
+      "type": "weapon"
+    },
+    {
+      "id": "8070000",
+      "title": "Monk's Flameblade",
+      "description": "Curved sword with a flickering flame motif.\nWielded by the Fire Monks who came from the Mountaintops of the Giants.\nThe monks came to the land of Liurnia in pursuit of a fugitive who stole their fire.",
+      "type": "weapon"
+    },
+    {
+      "id": "8080000",
+      "title": "Beastman's Cleaver",
+      "description": "Curved greatsword of colossal size forged of dull iron and wielded by the beastmen of Farum Azula.\nThe blade is incredibly heavy, but well-balanced. Comparatively easy to wield for the damage it delivers. It's clear the beastmen possess knowledge beyond human ken.",
+      "type": "weapon"
+    },
+    {
+      "id": "8100000",
+      "title": "Morgott's Cursed Sword",
+      "description": "Warped blade of shifting hue used by Morgott, the Omen King.\nThe accursed blood that Morgott recanted and sealed away reformed into this blade.",
+      "type": "weapon"
+    },
+    {
+      "id": "8110000",
+      "title": "Holy Inferno Greatsword",
+      "description": "Large katana used by Monks of the Giants' Flame.\nThe characteristic blade has the motif\nof flickering flames.",
+      "type": "weapon"
+    },
+    {
+      "id": "9000000",
+      "title": "Uchigatana",
+      "description": "A katana with a long single-edged curved blade.\nA unique weapon wielded by the samurai from the Land of Reeds.\nThe blade, with its undulating design, boasts extraordinary sharpness, and its slash attacks cause blood loss.",
+      "type": "weapon"
+    },
+    {
+      "id": "9010000",
+      "title": "Nagakiba",
+      "description": "Katana with a ferociously long blade.\nSignature weapon of Yura, hunter of Bloody Fingers.\nReminiscent of a reinforced spear, its imposing length can be put to good use with powerful thrusting attacks.",
+      "type": "weapon"
+    },
+    {
+      "id": "9020000",
+      "title": "Hand of Malenia",
+      "description": "Blade built into Malenia's prosthetic arm.\nThrough consecration it is resistant to rot.\nMalenia's war prosthesis symbolized her victories.\nSome claim to have seen wings when the weapon was raised aloft; wings of fierce determination that have never known defeat.",
+      "type": "weapon"
+    },
+    {
+      "id": "9030000",
+      "title": "Meteoric Ore Blade",
+      "description": "Katana forged from meteoric ore to dispatch lifeforms born of falling stars.\nDeals magic damage.\nThe blade is weighty, known to deliver slashes of such ferocity that the impact is said to resemble the crash of a falling meteor.",
+      "type": "weapon"
+    },
+    {
+      "id": "9040000",
+      "title": "Rivers of Blood",
+      "description": "Weapon of Okina, swordsman from the Land of Reeds.\nA cursed weapon that has felled countless men.\nWhen Mohg, the Lord of Blood, first felt Okina's sword, and madness, upon his flesh, he had a proposal, to offer Okina the life of a demon, whose thirst would never go unsated.",
+      "type": "weapon"
+    },
+    {
+      "id": "9060000",
+      "title": "Moonveil",
+      "description": "Katana forged of glintstone.\nMasterpiece of a Sellian swordsmith.\nLight enwreathes the blade when sheathed, explaining its Moonveil moniker.",
+      "type": "weapon"
+    },
+    {
+      "id": "9070000",
+      "title": "Dragonscale Blade",
+      "description": "A weapon made by sharpening a Gravel Stone scale, thought to be the source of ancient dragon immortality, into an unclouded blade.\nAlas, the Dragonkin Soldiers never attained immortality, and perished as decrepit, pale imitations of their skyborn kin.",
+      "type": "weapon"
+    },
+    {
+      "id": "9080000",
+      "title": "Serpentbone Blade",
+      "description": "Sinister katana modeled after a serpent bone.\nThe densely packed row of spines that jut away from the cutting edge are coated in a lethal poison.",
+      "type": "weapon"
+    },
+    {
+      "id": "10000000",
+      "title": "Twinblade",
+      "description": "A sword with blades on both sides of the hilt.\nThis weapon is difficult to wield and demands high dexterity.\nCan be wielded with a single hand, but its true strength is unlocked with dual-handed spinning attacks.",
+      "type": "weapon"
+    },
+    {
+      "id": "10010000",
+      "title": "Godskin Peeler",
+      "description": "Unique twinblade wielded by Godskin Apostles characterized by its disturbing design. One end features a sickle for slicing attacks while the other boasts a winding spike for boring into flesh.\nMuch skill is required to wield this weapon due to its asymmetric nature.",
+      "type": "weapon"
+    },
+    {
+      "id": "10030000",
+      "title": "Twinned Knight Swords",
+      "description": "An attractive twinblade of fine make that prizes the chivalric way.\nCan be wielded with a single hand, but its true strength is unlocked with dual-handed spinning attacks.",
+      "type": "weapon"
+    },
+    {
+      "id": "10050000",
+      "title": "Eleonora's Poleblade",
+      "description": "Twinned naginata forged in the Land of Reeds.\nChosen weapon of Eleonora, Violet Bloody Finger.\nHer mastery of the sword was such that her onslaught was likened to a whirlwind, but now her legacy is stained by accursed blood.",
+      "type": "weapon"
+    },
+    {
+      "id": "10060000",
+      "title": "Abundance and Decay Twinblade",
+      "description": "Twinblade symbolizing twins Miquella and Malenia.\nMiquella and his sister were born from an\ninseparable fate.\nThe blades contain the Runes of both\nAbundance and Decay.",
+      "type": "weapon"
+    },
+    {
+      "id": "10070000",
+      "title": "Abundance Twinblade",
+      "description": "Twinblade that contain the power of the\nRune of Abundance.\nThe holy power within the blade can\ncall upon part of Miquella's own strength.",
+      "type": "weapon"
+    },
+    {
+      "id": "10080000",
+      "title": "Gargoyle's Twinblade",
+      "description": "Bronze twinblade wielded by Valiant Gargoyle.\nJust like the wielder, the missing parts have been mended with corpse wax; a patchwork of champions.",
+      "type": "weapon"
+    },
+    {
+      "id": "10090000",
+      "title": "Gargoyle's Black Blades",
+      "description": "Bronze twinblade wielded by Valiant Gargoyle, mended with blackened corpse wax.\nDeals holy damage.\nSuch is the mark of those who serve Maliketh, the Black Blade.",
+      "type": "weapon"
+    },
+    {
+      "id": "11000000",
+      "title": "Mace",
+      "description": "An iron bludgeon with sharp protrusions.\nStriking attacks have few drawbacks, potent as they are at breaking through guards and stances. Most suited to head on slugging matches.",
+      "type": "weapon"
+    },
+    {
+      "id": "11010000",
+      "title": "Club",
+      "description": "A thick, solid lump of wood.\nWielding this striking weapon requires no skill.\nA simple, primitive weapon that requires only brute strength and persistence to hammer your foe into the ground.",
+      "type": "weapon"
+    },
+    {
+      "id": "11030000",
+      "title": "Curved Club",
+      "description": "Hard, curved club, shaped like a crescent moon.\nWielded instead of a curved sword by Albinaurics lacking dexterity. The only point of similarity between the two is the shape.",
+      "type": "weapon"
+    },
+    {
+      "id": "11040000",
+      "title": "Warpick",
+      "description": "Warhammer with a hard protruding beak.\nA pickaxe designed for combat, in essence.\nA simple but highly effective weapon, the weighty piercing attack casually rips through metal armor.",
+      "type": "weapon"
+    },
+    {
+      "id": "11050000",
+      "title": "Morning Star",
+      "description": "Warhammer comprised of a globe attached to a handle. Though a bludgeon dealing strike damage, the appellative star is covered in spikes which cause blood loss.\nIronic given its graceful name, this weapon often reeks of blood.",
+      "type": "weapon"
+    },
+    {
+      "id": "11060000",
+      "title": "Varré's Bouquet",
+      "description": "A steel mace resembling a charming bouquet of roses. Each petal has a sharpened edge, leaving the roses perpetually colored with blood.\nThis weapon reflects White Mask Varré's manner of speech rather well, enticing in its splendor, but full of deadly consequence.",
+      "type": "weapon"
+    },
+    {
+      "id": "11060100",
+      "title": "Heavy Varré's Bouquet",
+      "description": "A steel mace resembling a bouquet of roses.\nOn the contrary to its elaborate design,\nthe flowers are stained blood-red,\ngiving it the name \"Red Rose Mace\".",
+      "type": "weapon"
+    },
+    {
+      "id": "11070000",
+      "title": "Spiked Club",
+      "description": "A club with beast fangs wrapped around the striking end. The uneven spread of fangs causes blood loss.\nGiven only to the toughest of demi-humans, this weapon is a badge of honor. Or so the demi-humans believe.",
+      "type": "weapon"
+    },
+    {
+      "id": "11080000",
+      "title": "Hammer",
+      "description": "Hammer comprised of a large stone affixed to a metal handle. Originally a blacksmith's tool.\nThe art of smithing is said to have originated among the giants. This weapon's striking attacks boast ample weight behind them.",
+      "type": "weapon"
+    },
+    {
+      "id": "11090000",
+      "title": "Monk's Flamemace",
+      "description": "Warhammer made to resemble flickering flames. Signature weapon of the Fire Monks, who hail from the Mountaintops of the Giants.\nThe unique strong attack rouses fiery combative spirit.",
+      "type": "weapon"
+    },
+    {
+      "id": "11100000",
+      "title": "Envoy's Horn",
+      "description": "Golden horn of the Oracle Envoys. Profoundly weighty, its blows are sure to be felt.\nOriginally an instrument, but one that cannot be sounded by a mere human. Or perhaps it is too early to sound the call.",
+      "type": "weapon"
+    },
+    {
+      "id": "11110000",
+      "title": "Scepter of the All-Knowing",
+      "description": "Scepter in the form of a hand grasping a pearl. Signature weapon of Sir Gideon Ofnir, the All-Knowing. The pearl stands for the world, the heavens, and an eye, representing the many forms of knowledge, never fully attainable. Even knowing that, the All-Knowing's hand grasps for it.",
+      "type": "weapon"
+    },
+    {
+      "id": "11120000",
+      "title": "Nox Flowing Hammer",
+      "description": "Mace shaped like a suspended metal droplet wielded by monks of the Eternal City.\nForged from liquid metal from a Silver Tear, it is thoroughly tempered until hardened.",
+      "type": "weapon"
+    },
+    {
+      "id": "11130000",
+      "title": "Ringed Finger",
+      "description": "Bludgeon made of an enormous finger sheathed in several heavy rings. Thought to have been cut from an ancestor of the Fingercreeper.\nSome life yet remains in this legacy of an ancient act of blasphemy, as evidenced by the barely perceptible warmth it still exudes.",
+      "type": "weapon"
+    },
+    {
+      "id": "11140000",
+      "title": "Stone Club",
+      "description": "Signature weapon of battlemages, hewn from hard glintstone. This club is much heavier than its size suggests, but has no magic power.\nSo that they not lose sight of the true essence of combat, battlemages prefer to feel the impact of their blows, fighting their opponents hand to hand.",
+      "type": "weapon"
+    },
+    {
+      "id": "11150000",
+      "title": "Marika's Hammer",
+      "description": "Stone hammer made in the lands of the Numen, outside the Lands Between. The tool with which Queen Marika shattered the Elden Ring and Radagon attempted to repair it.\nThe hammer partially broke upon shattering the Ring, becoming splintered with rune fragments.",
+      "type": "weapon"
+    },
+    {
+      "id": "11160000",
+      "title": "Father Marika's Hammer",
+      "description": "Club of simple design, made by fitting\nstone to a piece of lumber.\nIts small size compared to most clubs\nmake it easier to wield in close-quarters.",
+      "type": "weapon"
+    },
+    {
+      "id": "11161200",
+      "title": "Occult Marika's Hammer",
+      "description": "Warhammer wielded by Radagon.\nForged in the age of gods, it harbors\ncolossal magic power.",
+      "type": "weapon"
+    },
+    {
+      "id": "12000000",
+      "title": "Large Club",
+      "description": "A thick, solid lump of wood.\nWielding this striking weapon requires no skill.\nA simple, primitive weapon that requires only brute strength to swing about.",
+      "type": "weapon"
+    },
+    {
+      "id": "12010000",
+      "title": "Greathorn Hammer",
+      "description": "Huge thick horn carved with tree ring-like markings adapted into a bludgeoning weapon. Wielded by ancestral follower warriors.\nThe ancient horn is imbued with the power of ancestral spirits. A small amount of HP is restored upon defeating an enemy.",
+      "type": "weapon"
+    },
+    {
+      "id": "12020000",
+      "title": "Battle Hammer",
+      "description": "Large iron warhammer designed for gladiatorial combat. Used by duelists who were exiled from the colosseum.\nWeighty enough to crush armor and its wearer alike.",
+      "type": "weapon"
+    },
+    {
+      "id": "12060000",
+      "title": "Great Mace",
+      "description": "Huge bludgeon with sharp protrusions. An enlarged version of its smaller cousin.\nMaintains all the advantages of smaller bludgeons, boasting few deficiencies while being very capable at breaking enemy guards and stances. A shrewd choice for simple slugging matches.",
+      "type": "weapon"
+    },
+    {
+      "id": "12080000",
+      "title": "Curved Great Club",
+      "description": "Large curved club of hard wood, shaped like a crescent moon.\nWielded by Albinaurics lacking the dexterity demanded by a curved sword, and who prefer the added weight and destructive force.",
+      "type": "weapon"
+    },
+    {
+      "id": "12130000",
+      "title": "Celebrant's Skull",
+      "description": "Large bludgeon decorated with flowers and many-colored fabrics. Ceremonial tool used by dancers during the festivities of Dominula, Windmill Village.\nThe striking end is a skull too large in size to be human.\nGrants trace amounts of runes on landing attacks.",
+      "type": "weapon"
+    },
+    {
+      "id": "12140000",
+      "title": "Pickaxe",
+      "description": "Large pickaxe designed to crack thick bedrock. Tool of sturdy miners.\nNot originally designed as a weapon, but very adept at piercing armor.\n\"Little wretches, do you think your armor harder than stone?\"",
+      "type": "weapon"
+    },
+    {
+      "id": "12150000",
+      "title": "Beastclaw Greathammer",
+      "description": "Greathammer with a striking end modelled to resemble five beastly claws.\nThe black nails protruding from golden fur are said to represent Serosh, Lord of Beasts, who went on to become King Godfrey's Regent.",
+      "type": "weapon"
+    },
+    {
+      "id": "12160000",
+      "title": "Envoy's Long Horn",
+      "description": "Long golden horn of the Oracle Envoys. Profoundly weighty, its blows are sure to be felt.\nOriginally an instrument, but one that cannot be sounded by a mere human. Or perhaps it is too early to sound the call.",
+      "type": "weapon"
+    },
+    {
+      "id": "12170000",
+      "title": "Cranial Vessel Candlestand",
+      "description": "Candlestand used in worship of Birac, the most hallowed Monk Prelate of the Giants' Flame. Concerned over the lazy arrogance with which the monks treated the Flame, Birac severed his own head as a lesson to the others, intending it be used as a candlestand. His faith yet smolders from within the cranial vessel.",
+      "type": "weapon"
+    },
+    {
+      "id": "12180000",
+      "title": "Great Stars",
+      "description": "Huge bludgeon with three stars at the striking end. Though primarily a striking weapon, the stars' spikes cause blood loss.\nA blood-stained star is an ill omen, a fact not lost upon those against whom this weapon is brought to bear. Landing attacks slightly restores HP.",
+      "type": "weapon"
+    },
+    {
+      "id": "12190000",
+      "title": "Brick Hammer",
+      "description": "Weapon made from an ordinary stone brick. Wielded by a laborer who lead a rebellion, and later become a champion himself.\nEven among other bludgeons of its size, this weapon is especially weighty. The strength of a giant is required to wield it.",
+      "type": "weapon"
+    },
+    {
+      "id": "12200000",
+      "title": "Devourer's Scepter",
+      "description": "Scepter in the shape of a serpent devouring the world. This weapon will one day become the very symbol of the Lord of Blasphemy.\nOne of the legendary armaments.\nA vision of the future briefly seen by Rykard in his final moments before being devoured by the great serpent.",
+      "type": "weapon"
+    },
+    {
+      "id": "12210000",
+      "title": "Rotten Battle Hammer",
+      "description": "Large iron warhammer designed for gladiatorial combat, now festering with scarlet rot.\nWeighty enough to crush armor and its wearer alike.",
+      "type": "weapon"
+    },
+    {
+      "id": "13000000",
+      "title": "Nightrider Flail",
+      "description": "A flail with two additional bludgeoning heads.\nWeapon of the Night's Cavalry who ride funeral steeds.\nThe large spikes make it highly effective at inducing blood loss, but also demand higher dexterity to wield.",
+      "type": "weapon"
+    },
+    {
+      "id": "13010000",
+      "title": "Flail",
+      "description": "Weapon consisting of a bludgeoning head attached to a handle by a chain. The iron ball is spiked and induces blood loss.\nBlows from this weapon cannot be parried. The charge attack whirls the iron ball around for increased force before striking.",
+      "type": "weapon"
+    },
+    {
+      "id": "13020000",
+      "title": "Family Heads",
+      "description": "Three bludgeoning copper heads attached to a handle by chains. Signature weapon of Necromancer Garris, the heretical sage.\nThe heads were made to resemble those of his wife and two children.",
+      "type": "weapon"
+    },
+    {
+      "id": "13030000",
+      "title": "Bastard's Stars",
+      "description": "Flail which deals magic damage, having been imbued with power by the remembrance of Astel.\nFormed of the same many-colored star debris that comprised the form of the Naturalborn of the Void.",
+      "type": "weapon"
+    },
+    {
+      "id": "13040000",
+      "title": "Chainlink Flail",
+      "description": "A spiked iron tube attached by a chain wielded by Mad Pumpkin Heads.\nEspecially large for a flail, wielding it requires more strength than it does dexterity.",
+      "type": "weapon"
+    },
+    {
+      "id": "14000000",
+      "title": "Battle Axe",
+      "description": "A thick, heavy blade attached to a handle. A versatile, standard weapon\nCapable of powerful attacks thanks to the weighty blade, these weapons are also regarded for their powerful charge attacks.",
+      "type": "weapon"
+    },
+    {
+      "id": "14010000",
+      "title": "Forked Hatchet",
+      "description": "Peculiar hatchet wielded by imps.\nThe gently undulating forked blade is known as an \"imp's tongue\" and causes blood loss.",
+      "type": "weapon"
+    },
+    {
+      "id": "14020000",
+      "title": "Hand Axe",
+      "description": "Commonly known as a hatchet, this smaller variety of axe is an everyday work tool.\nDespite its short reach, it is easy to handle, exceling in successive attacks.",
+      "type": "weapon"
+    },
+    {
+      "id": "14030000",
+      "title": "Jawbone Axe",
+      "description": "Axe made from a herbivore's skull. Weapon of the ancestral followers who disdain metal.\nThis axe is more of a bludgeon; it forgoes a bladed edge, instead using the beast's molar teeth to buffet foes, dealing strike damage.",
+      "type": "weapon"
+    },
+    {
+      "id": "14040000",
+      "title": "Iron Cleaver",
+      "description": "Fairly large iron cleaver, commonly used by the maltreated Misbegotten.\nSteeped in resentment, these weapons are swung wildly and relentlessly, often after rushing up to foes. ",
+      "type": "weapon"
+    },
+    {
+      "id": "14050000",
+      "title": "Ripple Blade",
+      "description": "Unique weapon wielded by young Albinaurics, this sword is modelled after the ripples that are thought to be the origin of their species.\nIts attack power is greatly enhanced with one's arcane attribute.",
+      "type": "weapon"
+    },
+    {
+      "id": "14060000",
+      "title": "Celebrant's Cleaver",
+      "description": "Cleaver decorated with many-colored fabrics. Ceremonial tool used by dancers during the festivities of Dominula, Windmill Village.\nCrafted from human bone.\nGrants trace amounts of runes upon landing attacks.",
+      "type": "weapon"
+    },
+    {
+      "id": "14080000",
+      "title": "Icerind Hatchet",
+      "description": "A hatchet with a frost-coated blade. One of several gifts given by Castle Sol in the distant north.\nKnown as \"freezing fog,\" the blade is thought to be a dragon's scale. Inflicts a powerful frost effect.",
+      "type": "weapon"
+    },
+    {
+      "id": "14100000",
+      "title": "Highland Axe",
+      "description": "Single-sided axe used by the warriors of the highlands.\nBrave combatants begin battle by crying out their names. Roars are enhanced by this weapon.",
+      "type": "weapon"
+    },
+    {
+      "id": "14110000",
+      "title": "Sacrificial Axe",
+      "description": "Hatchet used in ancient sacrificial rite. A Deathbird is depicted as a malevolent deity.\nThe power of the rite yet lingers. A small amount of FP is restored upon slaying a foe.",
+      "type": "weapon"
+    },
+    {
+      "id": "14120000",
+      "title": "Rosus' Axe",
+      "description": "Usher of Death, Rosus, who shows the path to the catacombs throughout the Lands Between, is depicted on this ritual axe.\nThe dead easily lose their way, and have always been in sore need of a guiding hand.",
+      "type": "weapon"
+    },
+    {
+      "id": "14130000",
+      "title": "Burial Axe",
+      "description": "Axe of rotted bronze.\nA burial gift devoted to the deaths of heroes.\nPieces of meat clinging to the blade have\nbegun to form into mortuary wax.",
+      "type": "weapon"
+    },
+    {
+      "id": "14140000",
+      "title": "Stormhawk Axe",
+      "description": "Battle axe designed to resemble a hawk, with its wings comprising the blade. Signature weapon of warriors who strive to remain one with the storm, despite being so far from their place of birth.\nTheir hearts are proud, and thereby easily undone.",
+      "type": "weapon"
+    },
+    {
+      "id": "15000000",
+      "title": "Greataxe",
+      "description": "Greataxe akin to a huge lump of iron. Recognized as the weapon of choice of badland chieftains.\nToo heavy to be wielded by those of merely ordinary strength, blows from this axe will flatten enemies, and the force of its charged attack is a sight to behold.",
+      "type": "weapon"
+    },
+    {
+      "id": "15010000",
+      "title": "Warped Axe",
+      "description": "Oversized double-headed axe with a bizarre, almost melted appearance.\nBrute strength is the only thing required to wield this weapon, which appears to have taken quite the beating itself.",
+      "type": "weapon"
+    },
+    {
+      "id": "15020000",
+      "title": "Great Omenkiller Cleaver",
+      "description": "The blade of this huge, loathsome cleaver comprises a row of amputated Omen horns. Weapon of slaughter wielded by Omenkillers. \nThe hideous horns cause blood loss, adding vibrant colors to the ongoing mayhem.",
+      "type": "weapon"
+    },
+    {
+      "id": "15030000",
+      "title": "Crescent Moon Axe",
+      "description": "Greataxe with a large, arcing blade and long handle. The \"Crescent Moon\" of its name is said to have been spurred by nostalgia.\nSpecializes in sweeping through foes by making use of its long handle.",
+      "type": "weapon"
+    },
+    {
+      "id": "15040000",
+      "title": "Axe of Godrick",
+      "description": "Greataxe wielded by Godrick the Grafted. This golden battleaxe is emblazoned with the figure of a beast, representing the strength of Godfrey, First Elden Lord and patriarch of the golden lineage.\n\"I command thee kneel! For I am the lord of all that is golden!\"",
+      "type": "weapon"
+    },
+    {
+      "id": "15050000",
+      "title": "Longhaft Axe",
+      "description": "Large iron axe with a long handle. Weapon of the maltreated Misbegotten.\nMaking use of the force generated by its length, this weapon's resentment-charged blows are difficult to stop.",
+      "type": "weapon"
+    },
+    {
+      "id": "15060000",
+      "title": "Rusted Anchor",
+      "description": "A rusty anchor wielded as a weapon. Each of its four flukes is thick and sharp, enabling piercing attacks.\nWhen the Tarnished left the Lands Between with their Lord, one boat alone was said to have been left behind.",
+      "type": "weapon"
+    },
+    {
+      "id": "15080000",
+      "title": "Executioner's Greataxe",
+      "description": "Bulky cleaver welded to a long haft. Said to have been used to dispatch the remnants of defeated armies, felling them like timber.\nPerhaps that is the reason it excels at critical hits.",
+      "type": "weapon"
+    },
+    {
+      "id": "15110000",
+      "title": "Winged Greathorn",
+      "description": "A unique horn in which the power of ancestral spirits fiercely dwells, this large, wing-shaped specimen is wielded as a weapon of spirit worship.\nIn the ancestral spirit-worshipping faith, these are considered envoys' wings, made to reap the lives of beings which experience no sprouting.",
+      "type": "weapon"
+    },
+    {
+      "id": "15120000",
+      "title": "Butchering Knife",
+      "description": "Huge carving knife made to cleanly butcher the human body. Signature weapon of the Ogress Anastasia, known to have eaten countless Tarnished while disguised as a Finger Maiden.\nRestores a very small amount of HP when it squarely strikes an enemy.",
+      "type": "weapon"
+    },
+    {
+      "id": "15130000",
+      "title": "Gargoyle's Great Axe",
+      "description": "Bronze greataxe wielded by Valiant Gargoyle.\nJust like the wielder, the missing parts have been mended with corpse wax; a patchwork of champions.",
+      "type": "weapon"
+    },
+    {
+      "id": "15140000",
+      "title": "Gargoyle's Black Axe",
+      "description": "Bronze greataxe wielded by Valiant Gargoyle, mended with blackened corpse wax.\nDeals holy damage.\nSuch is the mark of those who serve Maliketh, the Black Blade.",
+      "type": "weapon"
+    },
+    {
+      "id": "15140100",
+      "title": "Heavy Gargoyle's Black Axe",
+      "description": "Greataxe wielded by the gargoyles\nserving under Maliketh.",
+      "type": "weapon"
+    },
+    {
+      "id": "16000000",
+      "title": "Short Spear",
+      "description": "A exceedingly plain spear of modest weight.\nSimple to wield compared to many of its peers, strong attack unleashes a series of successive piercing thrusts.",
+      "type": "weapon"
+    },
+    {
+      "id": "16010000",
+      "title": "Spear",
+      "description": "Weapon comprised of a blade attached to a long haft.\nA far-reaching piercing weapon, it can be wielded from behind the safety of a raised shield. Very effective against mounted foes.",
+      "type": "weapon"
+    },
+    {
+      "id": "16020000",
+      "title": "Crystal Spear",
+      "description": "Spear fashioned from pure crystal; a deed impossible for a human. Enwreathed with powerful magic, its attack scales with intelligence. The inscrutable Crystalians have but one clear purpose; to safeguard their crystals unto the end. One theory posits that they yearn for the return of their creator who will carve for them new brethren.",
+      "type": "weapon"
+    },
+    {
+      "id": "16030000",
+      "title": "Clayman's Harpoon",
+      "description": "Harpoon with a tip made from a sharpened meteorite shard. Wielded by the claymen who infest dynastic remains.\nThe blade emits a faint light and deals magic damage.",
+      "type": "weapon"
+    },
+    {
+      "id": "16040000",
+      "title": "Cleanrot Spear",
+      "description": "Spear of the Cleanrot Knights who fought alongside Malenia, Blade of Miquella.\nThe winged golden blade deals holy damage. The diminutive shield is blessed with an incantation that wards off rot.",
+      "type": "weapon"
+    },
+    {
+      "id": "16040100",
+      "title": "Heavy Cleanrot Knight's Spear",
+      "description": "Spear used by knights in service of Malenia,\nthe twin sister who possessed the Rune of Decay.\nWith its sharp tip, the weapon specializes in\nrunning opponents through.",
+      "type": "weapon"
+    },
+    {
+      "id": "16050000",
+      "title": "Partisan",
+      "description": "Spear with a wide tip.\nIn addition to its thrusting attacks, this highly versatile weapon can be swung to sweep through foes.",
+      "type": "weapon"
+    },
+    {
+      "id": "16060000",
+      "title": "Celebrant's Rib-Rake",
+      "description": "Rake decorated with many-colored fabrics. Ceremonial tool used by dancers during the festivities of Dominula, Windmill Village.\nCrafted from human bone.\nGrants trace amounts of runes upon landing attacks.",
+      "type": "weapon"
+    },
+    {
+      "id": "16070000",
+      "title": "Pike",
+      "description": "A longspear featuring an especially lengthy handle.\nSpecialized for use from long distances, it boasts the longest reach of any melee weapon. Incredibly useful even against foes on horseback, but hard to wield in cramped spaces.",
+      "type": "weapon"
+    },
+    {
+      "id": "16080000",
+      "title": "Torchpole",
+      "description": "Torch fastened to a long pole. Lights up dark areas, but cannot be raised overhead.\nUsed by soldiers on watch, its attacks set foes aflame.",
+      "type": "weapon"
+    },
+    {
+      "id": "16090000",
+      "title": "Bolt of Gransax",
+      "description": "Spear whittled from the weapon wielded by Gransax.\nOne of the legendary armaments.\nA great ancient dragon, Gransax once rained calamity upon the Royal Capital—the only time in historical record that Leyndell's walls have fallen. This marked the dawn of the war against the ancient dragons.",
+      "type": "weapon"
+    },
+    {
+      "id": "16110000",
+      "title": "Cross-Naginata",
+      "description": "Weapon consisting of a three-pronged blade affixed to a long pole. The long central blade closely resembles a katana.\nA weapon of the Land of Reeds, known for its ability to be wielded as a spear while still being capable of performing slashing attacks.",
+      "type": "weapon"
+    },
+    {
+      "id": "16120000",
+      "title": "Death Ritual Spear",
+      "description": "Ritual spear used by priests of old who were permitted to come among the Deathbirds.\nThe priests became guardians of the birds through the rite of Death, which also serves as an oath sworn to their distant resurrection.",
+      "type": "weapon"
+    },
+    {
+      "id": "16130000",
+      "title": "Inquisitor's Girandole",
+      "description": "Instrument of torture used on nobles behind the curtain at the Volcano Manor of Mt. Gelmir.\nIts numerous spikes pierce the flesh, then singe the wounds with flame. The smell of burnt blood induces despair in the victim. A candlestick conceived by a thorough mind.",
+      "type": "weapon"
+    },
+    {
+      "id": "16140000",
+      "title": "Spiked Spear",
+      "description": "Weapon comprised of a spiked cylinder attached to a long pole. Capable of dealing strike damage when swung. The spikes induce blood loss.\nWeapon of the Marionette Soldiers employed by sorcerers.",
+      "type": "weapon"
+    },
+    {
+      "id": "16150000",
+      "title": "Iron Spear",
+      "description": "Commonly used iron spear with no notable traits.\nThe blade is severely rusted.",
+      "type": "weapon"
+    },
+    {
+      "id": "16160000",
+      "title": "Rotten Crystal Spear",
+      "description": "Spear fashioned from pure crystal; a deed impossible for a human.\nEnwreathed with powerful magic, its attack scales with intelligence. Though festering with scarlet rot, its magic remains potent.",
+      "type": "weapon"
+    },
+    {
+      "id": "17010000",
+      "title": "Mohgwyn's Sacred Spear",
+      "description": "Trident of Mohg, Lord of Blood. A sacred spear that will come to symbolize his dynasty.\nAs well as serving as a weapon, it is an instrument of communion with an outer god who bestows power upon accursed blood. The mother of truth desires a wound.",
+      "type": "weapon"
+    },
+    {
+      "id": "17020000",
+      "title": "Siluria's Tree",
+      "description": "Siluria's Tree, weapon of one of the two honored as foremost among the Crucible Knights.\nThe primordial form of the Erdtree is close in nature to life itself, and this spear, modeled on its crucible, is imbued with ancient holy essence. ",
+      "type": "weapon"
+    },
+    {
+      "id": "17030000",
+      "title": "Serpent-Hunter",
+      "description": "Weapon that serves as both greatsword and spear. Thought to have been used to hunt an immortal great serpent in the distant past, it manifests a long blade of light when facing such a creature. When their master's heroic aspirations degenerated into mere greed, his men searched for a weapon with which they might halt their lord.",
+      "type": "weapon"
+    },
+    {
+      "id": "17050000",
+      "title": "Vyke's War Spear",
+      "description": "War spear singed and blistered by fingers, used by Vyke, Knight of the Roundtable Hold.\nLike Vyke himself, it has been tormented by the yellow flame of frenzy from within.",
+      "type": "weapon"
+    },
+    {
+      "id": "17060000",
+      "title": "Lance",
+      "description": "Considered a type of greatspear, this weapon has no blade, but instead features a long, conical body designed to pierce.\nThough heavy and hard to wield, this weapon displays its worth in horseback combat whether mounted or even on foot.",
+      "type": "weapon"
+    },
+    {
+      "id": "17070000",
+      "title": "Treespear",
+      "description": "Golden spear with tree-like design. Wielded by knights employed as palace guards in the Royal Capital of Leyndell.\nDeals holy damage.\nRequiring superior dexterity to wield, this greatspear can perform consecutive thrust attacks despite its larger size.",
+      "type": "weapon"
+    },
+    {
+      "id": "18000000",
+      "title": "Halberd",
+      "description": "A long-handled polearm that combines the functions of both axe and spear.\nCan be used to press a single enemy with continuous thrusting attacks, or swept at groups, taking advantage of its great reach and cleaving blade. A versatile weapon for any situation.",
+      "type": "weapon"
+    },
+    {
+      "id": "18010000",
+      "title": "Pest's Glaive",
+      "description": "Glaive made from a hard, sharpened shell. Wielded by the pests who emerged from the Swamp of Aeonia.\nSlightly increases non-physical damage negation.\nThough men might recognize the keen intellect of the pests evidenced by this spear's uncanny design, it will never be understood by them.",
+      "type": "weapon"
+    },
+    {
+      "id": "18020000",
+      "title": "Lucerne",
+      "description": "This polearm features a hard, sharpened beak-like spike attached to its head, designed to pierce armor.\nThough designed mainly as a thrusting weapon, its long handle can be utilized to get around an enemy's guard with a sideward sweeping attack.",
+      "type": "weapon"
+    },
+    {
+      "id": "18030000",
+      "title": "Banished Knight's Halberd",
+      "description": "A finely-crafted halberd intricately engraved with an ancient motif.\nGiven to knights who, whether by misfortune or misdeed, were forced to abandon their homes.\nMost of these knights were sent to the fringes, where they were forced to start anew with only despair for company.",
+      "type": "weapon"
+    },
+    {
+      "id": "18040000",
+      "title": "Commander's Standard",
+      "description": "A beaten red battle standard is furled around this time-worn halberd.\nEven after his lord was fled, Commander O'Neil continued to brandish this flag in the devastation of the rot-eaten field of battle, the sole veteran who remembers this battle with pride.",
+      "type": "weapon"
+    },
+    {
+      "id": "18050000",
+      "title": "Nightrider Glaive",
+      "description": "A jet-black glaive with a blade as weighty as a bludgeon. Weapon of the Night's Cavalry who ride funeral steeds.\nThis glaive excels at weighty slash attacks that crash into foes, making it a powerful weapon even on horseback.",
+      "type": "weapon"
+    },
+    {
+      "id": "18060000",
+      "title": "Ripple Crescent Halberd",
+      "description": "Weapon wielded by young Albinaurics.\nThe blade is said to resemble a partial image of a ripple, and its attack power scales with one's arcane attribute.",
+      "type": "weapon"
+    },
+    {
+      "id": "18070000",
+      "title": "Vulgar Militia Saw",
+      "description": "A weapon comprised of a saw blade attached to a long grip. Brandished by the vulgar militia, its serrated edge is very effective at inflicting blood loss. The saw is said to also be used to cut up bodies to feed the militia, but there are no firsthand witnesses to confirm the dire rumor.",
+      "type": "weapon"
+    },
+    {
+      "id": "18080000",
+      "title": "Golden Halberd",
+      "description": "Weighty halberd forged of gold. Wielded by the Order of Tree Sentinels, heavily equipped knights.\nDeals holy damage.\nA masterfully crafted weapon that lives up to its heft, but is difficult for one of mere human strength to wield.",
+      "type": "weapon"
+    },
+    {
+      "id": "18090000",
+      "title": "Glaive",
+      "description": "Weapon comprised of a sharp blade affixed to a long grip. It is in fact a sickle repurposed to be a tool of war.\nThis far-reaching weapon excels at slashing attacks.",
+      "type": "weapon"
+    },
+    {
+      "id": "18100000",
+      "title": "Loretta's War Sickle",
+      "description": "Intricately crafted silver war sickle wielded by Loretta, Knight of the Haligtree.\nOriginally given for service as a personal guard to Carian royalty, the weapon's blue glintstone has been replaced with unalloyed gold.",
+      "type": "weapon"
+    },
+    {
+      "id": "18110000",
+      "title": "Guardian's Swordspear",
+      "description": "Weapon comprising a long handle and broad blade sharpened from the hard wood of old trees.\nWielded by guardians of the Minor Erdtrees, known as experts in the arts of combat. The power of this weapon scales greatly with dexterity.",
+      "type": "weapon"
+    },
+    {
+      "id": "18130000",
+      "title": "Vulgar Militia Shotel",
+      "description": "A hooked blade attached to a long handle. Wielded by the vulgar militia, its attacks can slip through an enemy's guard.\nThe vulgar militia are the undecorated stewards of rancid, scorched battlefields that none dare approach, and forbidden domains better forgotten by the rest of the world.",
+      "type": "weapon"
+    },
+    {
+      "id": "18140000",
+      "title": "Dragon Halberd",
+      "description": "Halberd shaped like a dragon, enwreathed with both ice and lightning.\nAlas, the Dragonkin Soldiers never attained immortality, and perished as decrepit, pale imitations of their skyborn kin.",
+      "type": "weapon"
+    },
+    {
+      "id": "18140100",
+      "title": "Heavy Dragon Halberd",
+      "description": "Relatively large halberd with a striking point\nmodeled on a dragon.\nA one-of-a-kind masterwork made by\na weaponsmith who was enamored with\ndragons and their strength.",
+      "type": "weapon"
+    },
+    {
+      "id": "18150000",
+      "title": "Gargoyle's Halberd",
+      "description": "Bronze halberd wielded by Valiant Gargoyle.\nJust like the wielder, the missing parts have been mended with corpse wax; a patchwork of champions.",
+      "type": "weapon"
+    },
+    {
+      "id": "18160000",
+      "title": "Gargoyle's Black Halberd",
+      "description": "Bronze halberd wielded by Valiant Gargoyle, mended with blackened corpse wax.\nDeals holy damage.\nSuch is the mark of those who serve Maliketh, the Black Blade.",
+      "type": "weapon"
+    },
+    {
+      "id": "18160100",
+      "title": "Heavy Gargoyle's Black Halberd",
+      "description": "Halberd wielded by the gargoyles\nserving under Maliketh.",
+      "type": "weapon"
+    },
+    {
+      "id": "19000000",
+      "title": "Scythe",
+      "description": "Large scythe featuring a long, slender blade. Designed to reap, this weapon is capable of rapidly inflicting blood loss while also slipping through an enemy's guard.\nIn the hands of a highly dexterous wielder it is capable of striking fear into the heart of any foe.",
+      "type": "weapon"
+    },
+    {
+      "id": "19010000",
+      "title": "Grave Scythe",
+      "description": "Greatscythe comprised of a large blade affixed to a crooked stick. Weapon wielded by the aged grave keepers who tend the forgotten graveyards throughout the Lands Between.\nThis weapon is said to have served as a charm against evil spirits in times of old.",
+      "type": "weapon"
+    },
+    {
+      "id": "19020000",
+      "title": "Halo Scythe",
+      "description": "War scythe of the Cleanrot Knights who fought alongside Malenia, Blade of Miquella.\nThis was the weapon of commanders in Malenia's army, and the half-halo blade deals holy damage.",
+      "type": "weapon"
+    },
+    {
+      "id": "19050000",
+      "title": "Heretic's Hook",
+      "description": "Scythe used both for collecting\nand offering up the dead.\nThe blade itself seems to be\na tortured, maddened thing.",
+      "type": "weapon"
+    },
+    {
+      "id": "19060000",
+      "title": "Winged Scythe",
+      "description": "Sacred scythe resembling a pair of white wings. Deals holy damage.\nAccording to pagan belief, white-winged maidens are said to be Death's gentle envoys.",
+      "type": "weapon"
+    },
+    {
+      "id": "20000000",
+      "title": "Whip",
+      "description": "A leather whip. Not originally used for combat, but as an instrument of pain.\nThough its supple attacks cannot be thwarted by parrying or even guarding, it is incapable of dealing critical hits.",
+      "type": "weapon"
+    },
+    {
+      "id": "20020000",
+      "title": "Thorned Whip",
+      "description": "Hefty whip covered in crimson thorns. Weapon of the Prelates who lead the Fire Monks. A device of fearsome religious encouragement, it is fashioned in the image of the briars of sin.\nVery effective at inflicting blood loss.",
+      "type": "weapon"
+    },
+    {
+      "id": "20030000",
+      "title": "Magma Whip Candlestick",
+      "description": "This ritual implement is a three pronged candlestick with solid flames formed of the magma of Mt. Gelmir.\nWhen wielded as a weapon, the flames become supple whips of lava.",
+      "type": "weapon"
+    },
+    {
+      "id": "20030100",
+      "title": "Heavy Lava Whip",
+      "description": "Whip with a unique three-headed shape.\nThe power of flame dwells within, and when\nimbued with magic, lava spews from its end.",
+      "type": "weapon"
+    },
+    {
+      "id": "20050000",
+      "title": "Hoslow's Petal Whip",
+      "description": "Metal whip formed of razor-sharp chain-link blades that have the appearance of flower petals. This work of art is handed down through the generations of the illustrious House Hoslow.\nHigh dexterity is required to wield this weapon, but it excels at inflicting devastating blood loss.\n\"The tale of House Hoslow is told in blood.\"",
+      "type": "weapon"
+    },
+    {
+      "id": "20060000",
+      "title": "Giant's Red Braid",
+      "description": "Hefty whip woven from the flame-red hair of a Fire Giant.\nEvery giant is red of hair, and Radagon was said to have despised his own red locks. Perhaps that was a curse of their kind.",
+      "type": "weapon"
+    },
+    {
+      "id": "20070000",
+      "title": "Urumi",
+      "description": "This weapon made of extremely thin, flexible blades of metal is wielded like a whip by Nightfolk warriors.\nThough in essence a whip with a cutting edge, it can also be used as a spear to pierce foes.",
+      "type": "weapon"
+    },
+    {
+      "id": "21000000",
+      "title": "Caestus",
+      "description": "A weapon built for striking with the fists, made of tough leather inlaid with iron rivets.\nFist weapons come in pairs, and two-handing this weapon will equip it to both hands.",
+      "type": "weapon"
+    },
+    {
+      "id": "21010000",
+      "title": "Spiked Caestus",
+      "description": "A caestus with the rivets replaced by blood loss-inducing spikes.\nFist weapons come in pairs, and two-handing this weapon will equip it to both hands.",
+      "type": "weapon"
+    },
+    {
+      "id": "21060000",
+      "title": "Grafted Dragon",
+      "description": "The embodiment of the power that still remained in the dragon's head that was grafted to Godrick's left arm.\nThe wielder's arm will take the form of a small dragon, sprouting sharp dragon fangs at the fist.\nThis weapon cannot be two-handed.",
+      "type": "weapon"
+    },
+    {
+      "id": "21070000",
+      "title": "Iron Ball",
+      "description": "Iron manifer of spherical shape. Big Boggart the blackguard's weapon of choice.\nNot a weapon to be taken lightly, as its weighty blows shatter bones with ease.",
+      "type": "weapon"
+    },
+    {
+      "id": "21080000",
+      "title": "Star Fist",
+      "description": "Spherical iron manifer covered in spikes which induce blood loss.\nUsed in brutal games of pugilism.",
+      "type": "weapon"
+    },
+    {
+      "id": "21100000",
+      "title": "Katar",
+      "description": "Imported dagger design with a rather unique handle. The blade can be swung about as the extension of one's fist.",
+      "type": "weapon"
+    },
+    {
+      "id": "21110000",
+      "title": "Clinging Bone",
+      "description": "Horrific weapon made of a hardened skeletal arm. Wielded by Ensha of the Royal Remains.\nFitted by placing one's hands into the fists' grips until they dig in.\n\"O clinging creature. A king relinquishes not the hand.\"",
+      "type": "weapon"
+    },
+    {
+      "id": "21120000",
+      "title": "Veteran's Prosthesis",
+      "description": "Bladed prosthetic leg enwreathed with the power of lightning, instead attached to the fist. Commander Niall, veteran of Castle Sol, offered this prosthesis in exchange for the lives of defeated knights held prisoner. He went on to lead these men as an army of no nation.",
+      "type": "weapon"
+    },
+    {
+      "id": "21130000",
+      "title": "Cipher Pata",
+      "description": "One of the weapons originating from the Two Fingers. A formless sequence of ciphers comprise its blade, and as such no shield can repel it. Deals holy damage.\nThe furtive inscription appears to hang in the air; the language of light spoken by the Two Fingers.",
+      "type": "weapon"
+    },
+    {
+      "id": "22000000",
+      "title": "Hookclaws",
+      "description": "Weapon worn on the fist comprised of sharp parallel blades favored by those who lurk in the dark. Lacerations cause blood loss with great effect.\nClaw weapons come in pairs, and two-handing this weapon will equip it to both hands.",
+      "type": "weapon"
+    },
+    {
+      "id": "22010000",
+      "title": "Venomous Fang",
+      "description": "One of the weapons designed for gladiatorial combat. Used by duelists who were exiled from the colosseum.\nThe black fang protruding from the bronze snake head is coated in deadly poison.",
+      "type": "weapon"
+    },
+    {
+      "id": "22020000",
+      "title": "Bloodhound Claws",
+      "description": "Large curved claws used by Bloodhound Knights.\nThe curve allows the weapon to slip through an enemy's guard.",
+      "type": "weapon"
+    },
+    {
+      "id": "22030000",
+      "title": "Raptor Talons",
+      "description": "Claw comprised of two sharp, thin blades. Wielded by the assassins of ravenmount, this weapon allows them to imitate the attacks of Deathbirds.\nBesides excelling at airborne attacks, its charge attack mimics the vicious swoop of a bird of prey. ",
+      "type": "weapon"
+    },
+    {
+      "id": "23000000",
+      "title": "Prelate's Inferno Crozier",
+      "description": "Colossal hammer with the appearance of roiling flames. Weapon of the Prelates who lead the Fire Monks. Its heft represents the weight of their guardianship.\nThe hammer's head is unusually substantial, and strong attacks will fling foes into the air.",
+      "type": "weapon"
+    },
+    {
+      "id": "23010000",
+      "title": "Watchdog's Staff",
+      "description": "Large stone staff embedded with glintstone. Wielded by Erdtree Burial Watchdogs who protect catacombs.\nThe Watchdogs, battered and broken over their lengthy tenure, rule the catacombs and are even said to command the imps.",
+      "type": "weapon"
+    },
+    {
+      "id": "23010100",
+      "title": "Heavy Watchdog's Crosier",
+      "description": "Great hammer wielded by golems\nprotecting the Undercapital Labyrinth.\nExtraordinary strength is required\nto wield something so heavy.",
+      "type": "weapon"
+    },
+    {
+      "id": "23020000",
+      "title": "Great Club",
+      "description": "An enormous club of hard wood. Wildly hammering foes with this striking weapon requires no dexterity; only brute force. While it may seem sacrilegious, this weapon is said to be a withered branch of the Erdtree. Imbued with holy power, this weapon will never snap.",
+      "type": "weapon"
+    },
+    {
+      "id": "23030000",
+      "title": "Envoy's Greathorn",
+      "description": "Fanned golden horn of the Oracle Envoys. Profoundly weighty, its blows are sure to be felt.\nOriginally an instrument, but one that cannot be sounded by a mere human. Or perhaps it is too early to sound the call.",
+      "type": "weapon"
+    },
+    {
+      "id": "23040000",
+      "title": "Duelist Greataxe",
+      "description": "Greataxe designed for gladiatorial combat. Used by duelists who were exiled from the colosseum.\nA weapon reserved for duelist champions, the charge attack is particularly ferocious.",
+      "type": "weapon"
+    },
+    {
+      "id": "23050000",
+      "title": "Axe of Godfrey",
+      "description": "Weapon of Godfrey, Elden Lord. It was broken in a battle fought as leader of the Tarnished during the Long March. This weapon is symbolic of Godfrey's vow to conduct himself as a lord, later becoming an emblem of the golden lineage. In the days of the past, a crown was warranted with strength.",
+      "type": "weapon"
+    },
+    {
+      "id": "23060000",
+      "title": "Dragon Greatclaw",
+      "description": "Weapon said to have been whittled from the claw of a great, ancient dragon, wielded by grotesque Tree Sentinels who yet serve the Erdtree.\nThe claw is enwreathed with lightning, and tears through the dragons' feeble descendants with ease.",
+      "type": "weapon"
+    },
+    {
+      "id": "23070000",
+      "title": "Staff of the Avatar",
+      "description": "Ceremonial staff depicting the Erdtree in its historic radiance. Wielded by the avatars who protect the Minor Erdtrees.\nThe avatars, emerging in the wake of the Elden Ring's shattering, were determined to protect the withering Erdtree's offspring.",
+      "type": "weapon"
+    },
+    {
+      "id": "23080000",
+      "title": "Fallingstar Beast Jaw",
+      "description": "Part of a Fallingstar Beast's jaw, hard and shining black, fashioned into a weapon.\nWith its sharp point, this colossal weapon can skewer foes.",
+      "type": "weapon"
+    },
+    {
+      "id": "23100000",
+      "title": "Ghiza's Wheel",
+      "description": "Great iron wheel lined with flesh-flaying blades. Device of torture used by Inquisitor Ghiza. As the wheel spins it causes severe pain and blood loss.\nThe design was adopted for use as the iconic weapon wielded by Iron Virgins.",
+      "type": "weapon"
+    },
+    {
+      "id": "23110000",
+      "title": "Giant-Crusher",
+      "description": "A hammer made from a boulder, used in the War against the Giants. One of the heftiest weapons in the entire Lands Between. After the giants were quelled, and man turned against man in violence, this weapon was all but forgotten. Man has grown feeble in comparison to his forebears.",
+      "type": "weapon"
+    },
+    {
+      "id": "23120000",
+      "title": "Golem's Halberd",
+      "description": "A great halberd of black stone crafted by a civilization now gone to ruin. Wielded by the Guardian Golem.",
+      "type": "weapon"
+    },
+    {
+      "id": "23130000",
+      "title": "Troll's Hammer",
+      "description": "Mining tool of stonedigger trolls used to crack bedrock.\nTrolls are descended from the giants, and these were supposedly once used as ceremonial smithing tools. In the distant past, smithing was considered divine.",
+      "type": "weapon"
+    },
+    {
+      "id": "23140000",
+      "title": "Rotten Staff",
+      "description": "Ceremonial staff depicting the Erdtree in its historic radiance. It festers with scarlet rot.\nWielded by the avatars who protect the Minor Erdtrees.",
+      "type": "weapon"
+    },
+    {
+      "id": "23150000",
+      "title": "Rotten Greataxe",
+      "description": "Greataxe designed for gladiatorial combat, now festering with scarlet rot.\nUsed by duelists who were exiled from the colosseum.",
+      "type": "weapon"
+    },
+    {
+      "id": "24000000",
+      "title": "Torch",
+      "description": "This torch's tip is wrapped in oil-soaked rags and set on fire.\nThe flame can illuminate dark locales, or be used to attack enemies.\nCan be raised up when equipped in the left hand,\nilluminating more of the surrounding area.",
+      "type": "weapon"
+    },
+    {
+      "id": "24020000",
+      "title": "Steel-Wire Torch",
+      "description": "Torch wound with metal wire. The flame can illuminate dark locales, or be used to attack enemies.\nHeavier than a normal torch, but the heated filament boosts fire damage dealt.",
+      "type": "weapon"
+    },
+    {
+      "id": "24040000",
+      "title": "St. Trina's Torch",
+      "description": "Candlestand torch that burns with a light-purple flame. The carvings depict St. Trina, but in adult form, somewhat unnervingly.\nThe light-purple flame induces sleep.",
+      "type": "weapon"
+    },
+    {
+      "id": "24050000",
+      "title": "Ghostflame Torch",
+      "description": "Metal torch that burns with cold ghostflame. Tool of the Fallen Hawks who prowl the underground rivers. When the band's last embers were used up in their long search, they began to burn the bones of their fellows, acquiring the cold ghostflame, but sealing their fate as dwellers of the underground for all eternity.",
+      "type": "weapon"
+    },
+    {
+      "id": "24060000",
+      "title": "Beast-Repellent Torch",
+      "description": "A torch which burns oil infused with a special incense. The aroma pacifies wild beasts.\nTorches such as these were used to keep unwelcome beasts away from treasure troves hidden in caves.",
+      "type": "weapon"
+    },
+    {
+      "id": "24070000",
+      "title": "Sentry's Torch",
+      "description": "Torch given to protectors of the Erdtree. Its flames are bestowed with a special incantation which allows the bearer to see assassins cloaked in veils. Furnished on behalf of the Erdtree and the Grace-Given Lord such that a Night of Black Knives will never come again.",
+      "type": "weapon"
+    },
+    {
+      "id": "30000000",
+      "title": "Buckler",
+      "description": "A small metal roundshield. The bump in the center is designed to parry.\nA well-timed parry deflects an enemy's attack, breaking their stance and leaving them open to a critical hit. Though risk is inherent, this shield favors aggression.",
+      "type": "weapon"
+    },
+    {
+      "id": "30010000",
+      "title": "Perfumer's Shield",
+      "description": "Golden shield used by the perfumers of Leyndell during military service.\nMade to be thin and light of weight, even those lacking strength can employ this immunity-boosting shield.",
+      "type": "weapon"
+    },
+    {
+      "id": "30020000",
+      "title": "Man-Serpent's Shield",
+      "description": "Small copper dome-shaped roundshield carried by the man-serpents of Mt. Gelmir.\nSaid to have been tempered in lava, it boasts great resistance to fire.",
+      "type": "weapon"
+    },
+    {
+      "id": "30030000",
+      "title": "Rickety Shield",
+      "description": "A creaky old wooden shield, circular in shape. Roughly reinforced with vines.\nThere are countless other shields available of better make. This piece of scrap isn't worth the effort of equipping.",
+      "type": "weapon"
+    },
+    {
+      "id": "30040000",
+      "title": "Pillory Shield",
+      "description": "Pillory made to punish serious felons, used as a shield. Though made of good, sturdy wood, it is only a makeshift tool and performs as such.\nPerhaps due to its use as a device with which the guilty were made to endure prolonged suffering, it raises vitality.",
+      "type": "weapon"
+    },
+    {
+      "id": "30060000",
+      "title": "Beastman's Jar-Shield",
+      "description": "Shield fashioned from a tall broken jar carried by the beastmen of Farum Azula. There is a particular knack to wielding it.\nThe beastmen have always fired earthenware jars for the express purpose of making shields. Such are their ways, strange though they are.",
+      "type": "weapon"
+    },
+    {
+      "id": "30070000",
+      "title": "Red Thorn Roundshield",
+      "description": "A small, wooden roundshield. It is light and easy to handle, but cannot offer the damage negation of a metal shield.\nIts emblem is an ancient thorn design. Though it isn't much, it boosts fire damage negation.",
+      "type": "weapon"
+    },
+    {
+      "id": "30080000",
+      "title": "Scripture Wooden Shield",
+      "description": "A small, wooden roundshield. It is light and easy to handle, but cannot offer the damage negation of a metal shield.\nAn ancient cipher engraving lines the circumference. Though it isn't much, it boosts holy damage negation.",
+      "type": "weapon"
+    },
+    {
+      "id": "30090000",
+      "title": "Riveted Wooden Shield",
+      "description": "Small wooden roundshield that has been reinforced with metal. It is light and easy to handle, but cannot offer the damage negation of a true metal shield.\nThe design riveted to the center represents both sword and tree.",
+      "type": "weapon"
+    },
+    {
+      "id": "30100000",
+      "title": "Blue-White Wooden Shield",
+      "description": "Small wooden roundshield that has been reinforced with metal. It is light and easy to handle, but cannot offer the damage negation of a true metal shield.\nThe design is said to represent the stars of the night sky, portending fate.",
+      "type": "weapon"
+    },
+    {
+      "id": "30110000",
+      "title": "Rift Shield",
+      "description": "Small metal roundshield depicting a sinister rift.\nAn antiquated charm that glares back at an enemy, it boosts focus.",
+      "type": "weapon"
+    },
+    {
+      "id": "30120000",
+      "title": "Iron Roundshield",
+      "description": "An ordinary small roundshield made of metal. Heavier than a wooden shield, but boasts higher damage negation.\nFinely balanced, this shield is easy to use.",
+      "type": "weapon"
+    },
+    {
+      "id": "30130000",
+      "title": "Gilded Iron Shield",
+      "description": "Small metal roundshield. Heavier than a wooden shield, but boasts higher damage negation.\nThough the gold leaf is peeling and the effect is slight, it still boosts holy damage negation.",
+      "type": "weapon"
+    },
+    {
+      "id": "30140000",
+      "title": "Ice Crest Shield",
+      "description": "Small metal roundshield. Heavier than a wooden shield, but boasts higher damage negation.\nThe ice crest originates from a Carian princess. Though the effect is slight, it boosts magic damage negation and resistance to frost.",
+      "type": "weapon"
+    },
+    {
+      "id": "30150000",
+      "title": "Smoldering Shield",
+      "description": "Small shield made upon Mt. Gelmir forged from uncooling lava.\nResists frost with its heat, and can even be used to deal fire damage if wielded as a weapon.",
+      "type": "weapon"
+    },
+    {
+      "id": "30190000",
+      "title": "Spiralhorn Shield",
+      "description": "Small shield of antlers arranged in an eddy-like pattern. If used to attack a foe, the shield's antlers inflict blood loss. Once given to a Tarnished warrior who cultivated close ties to the ancestral followers. Though the effect is only slight, it boosts immunity, robustness, and focus.",
+      "type": "weapon"
+    },
+    {
+      "id": "30200000",
+      "title": "Coil Shield",
+      "description": "Armament designed for gladiatorial combat. Rises above its peers as a particularly showy specimen.\nThe sculpted bronze snake is a poisonous breed, boosting the wielder's resistance to poison.",
+      "type": "weapon"
+    },
+    {
+      "id": "31000000",
+      "title": "Kite Shield",
+      "description": "A standard medium-sized metal shield.\nMetal shields reliably negate physical damage when guarding, a trait which made them highly trusted on the battlefield.",
+      "type": "weapon"
+    },
+    {
+      "id": "31010000",
+      "title": "Marred Leather Shield",
+      "description": "Leather shield of Stormveil soldiers. Much like the castle, it is marred by mottling and thorns.\nSome say it is the curse of grafting which causes such affliction, while others talk of its root being something altogether more sinister hidden deep within the castle.",
+      "type": "weapon"
+    },
+    {
+      "id": "31020000",
+      "title": "Marred Wooden Shield",
+      "description": "Wooden shield of Stormveil soldiers. Much like the castle, it is marred by mottling and thorns.\nSome say it is the curse of grafting which causes such affliction, while others talk of its root being something altogether more sinister hidden deep within the castle.",
+      "type": "weapon"
+    },
+    {
+      "id": "31030000",
+      "title": "Banished Knight's Shield",
+      "description": "A tall medium-sized metal shield. Given to knights who, whether by misfortune or misdeed, were forced to abandon their homes.\nMost of these knights were sent to the fringes, where they were forced to start anew with only despair for company.",
+      "type": "weapon"
+    },
+    {
+      "id": "31040000",
+      "title": "Albinauric Shield",
+      "description": "Tall oval shield made of metal carried by young Albinaurics. The ornamentation represents the primordial drop of dew from which they are said to have been created.\nBoasts exceptional magic damage negation. The Albinaurics' most formidable foes were sorcerers, after all.",
+      "type": "weapon"
+    },
+    {
+      "id": "31050000",
+      "title": "Sun Realm Shield",
+      "description": "Shield of honor depicting a city crowned by the sun. It has seen better days.\nMuch like the wear upon the shield, the Seat of the Sun is long faded away.",
+      "type": "weapon"
+    },
+    {
+      "id": "31060000",
+      "title": "Silver Mirrorshield",
+      "description": "Shield of radiant silver, festooned with amber and carried by Loretta, Knight of the Haligtree.\nThe shape is said to imitate that of a sacred drop of dew, which inspired the absurd rumor that Loretta herself was an Albinauric.",
+      "type": "weapon"
+    },
+    {
+      "id": "31070000",
+      "title": "Round Shield",
+      "description": "A wooden roundshield that has been reinforced with metal.\nComparatively light for its size, this shield is easy to handle but lacks a true metal shield's ability to negate damage.",
+      "type": "weapon"
+    },
+    {
+      "id": "31080000",
+      "title": "Scorpion Kite Shield",
+      "description": "A standard medium-sized metal shield. Highly reputed for its solid build and reliability.\nEmblazoned with a yellow scorpion, a warning of surprise attacks and sudden strikes.",
+      "type": "weapon"
+    },
+    {
+      "id": "31090000",
+      "title": "Twinbird Kite Shield",
+      "description": "Shield featuring a vividly painted twinbird.\nThe twinbird is said to be the envoy of an outer god, and mother of the Deathbirds.\nAt dwindling levels of HP, this shield slightly boosts both attack and defense.",
+      "type": "weapon"
+    },
+    {
+      "id": "31100000",
+      "title": "Blue-Gold Kite Shield",
+      "description": "A standard medium-sized metal shield. Highly reputed for its solid build and reliability.\nThe design represents the Erdtree foregrounded against a blue sky.",
+      "type": "weapon"
+    },
+    {
+      "id": "31130000",
+      "title": "Brass Shield",
+      "description": "On the larger side for a medium-sized shield, the face has been covered in brass.\nCommonly employed in the Shattering.",
+      "type": "weapon"
+    },
+    {
+      "id": "31140000",
+      "title": "Great Turtle Shell",
+      "description": "Shield fashioned from a great turtle shell. The natural curve helps it contend with foes' attacks.\nThe turtle is a symbol of tirelessness, and this shield boosts stamina recovery speed.",
+      "type": "weapon"
+    },
+    {
+      "id": "31170000",
+      "title": "Shield of the Guilty",
+      "description": "Shield made to venerate a maiden whose eyes were crushed by Briars of Sin before being reborn in these lands.\nVenerating the repose of the soul, this shield boosts focus. The briars can be used to attack foes.",
+      "type": "weapon"
+    },
+    {
+      "id": "31190000",
+      "title": "Carian Knight's Shield",
+      "description": "A teardrop-shaped, medium-sized shield embedded with blue glintstones.\nCarried by knights who served the Carian royal family.\nExcels when facing magic or holy attacks. Just who were these knights preparing to fight?",
+      "type": "weapon"
+    },
+    {
+      "id": "31230000",
+      "title": "Large Leather Shield",
+      "description": "A roundshield covered in leather. On the larger side for a medium-sized shield.\nThough its damage negation may be lacking compared to a metal shield, it can handle a wider range of attack affinities.",
+      "type": "weapon"
+    },
+    {
+      "id": "31240000",
+      "title": "Horse Crest Wooden Shield",
+      "description": "A tall, medium-sized wooden shield. Light for its size, and easy to handle.\nThe circular horsehead design evokes a swift gallop.",
+      "type": "weapon"
+    },
+    {
+      "id": "31250000",
+      "title": "Candletree Wooden Shield",
+      "description": "A tall, medium-sized wooden shield. Light for its size, and easy to handle.\nThought to represent a surreptitious prophecy of cardinal sin, the lit candle-tree design was forbidden.",
+      "type": "weapon"
+    },
+    {
+      "id": "31260000",
+      "title": "Flame Crest Wooden Shield",
+      "description": "A tall, medium-sized wooden shield. Light for its size, and easy to handle. Carried by soldiers of the village that is afflicted by frenzy.\nThe yellow flame is the symbol of the affliction, serving as a warning to those who might approach the village.",
+      "type": "weapon"
+    },
+    {
+      "id": "31270000",
+      "title": "Hawk Crest Wooden Shield",
+      "description": "A tall, medium-sized wooden shield. Light for its size, and easy to handle.\nAdorned with a long-forgotten crest of Stormveil, ancient in design.",
+      "type": "weapon"
+    },
+    {
+      "id": "31280000",
+      "title": "Beast Crest Heater Shield",
+      "description": "A medium-sized metal shield. Easier to handle than a kite shield.\nFeatures a beast as its crest, serving to remind warriors not to succumb to the arousal of battle. Fight with passion, but become not its prisoner.",
+      "type": "weapon"
+    },
+    {
+      "id": "31290000",
+      "title": "Red Crest Heater Shield",
+      "description": "A medium-sized metal shield. Easier to handle than a kite shield.\nThe crest symbolizes red wings.",
+      "type": "weapon"
+    },
+    {
+      "id": "31300000",
+      "title": "Blue Crest Heater Shield",
+      "description": "A medium-sized metal shield. Easier to handle than a kite shield.\nThe crest represents a forest and river.",
+      "type": "weapon"
+    },
+    {
+      "id": "31310000",
+      "title": "Eclipse Crest Heater Shield",
+      "description": "A medium-sized metal shield. Easier to handle than a kite shield.\nThe sun in eclipse is said to be the symbol of the Wandering Mausoleum where the soulless demigods slumber.",
+      "type": "weapon"
+    },
+    {
+      "id": "31320000",
+      "title": "Inverted Hawk Heater Shield",
+      "description": "A medium-sized metal shield. Easier to handle than a kite shield.\nThe inverted hawk is the emblem of the company of slaves ordered to explore the Eternal City.",
+      "type": "weapon"
+    },
+    {
+      "id": "31330000",
+      "title": "Heater Shield",
+      "description": "A medium-sized metal shield, comparatively easy to handle.\nMetal shields reliably negate physical damage when guarding, a trait which made them highly trusted on the battlefield.",
+      "type": "weapon"
+    },
+    {
+      "id": "31340000",
+      "title": "Black Leather Shield",
+      "description": "Roundshield covered in black leather. On the larger side for a medium-sized shield.\nFrom the north, this shield depicts the polar star in rivets of gold. The inside is lined with fur, protecting the carrier from frost.",
+      "type": "weapon"
+    },
+    {
+      "id": "32000000",
+      "title": "Dragon Towershield",
+      "description": "Tower shield engraved with a dragon, symbol of protection. Heavy even among greatshields, it possesses exceptional guarding ability.\nThe ancient dragons, who ruled in the prehistoric era before the Erdtree, would protect their lord as a wall of living rock.",
+      "type": "weapon"
+    },
+    {
+      "id": "32020000",
+      "title": "Distinguished Greatshield",
+      "description": "Greatshield featuring sumptuous ornamentation used by the scions of great families.\nDue to their excessive size, these shields were at times seen as the hallmark of little lordlings who were too timid to earn a few nicks and scratches.",
+      "type": "weapon"
+    },
+    {
+      "id": "32030000",
+      "title": "Crucible Hornshield",
+      "description": "Greatshield of red-tinged gold carried by Crucible Knights. Features a great horn.\nAn ancient holiness dwells within. The crucible horn skewers foes when performing shield bashes.",
+      "type": "weapon"
+    },
+    {
+      "id": "32040000",
+      "title": "Dragonclaw Shield",
+      "description": "Greatshield said to have been whittled from the claw of a great, ancient dragon, wielded by grotesque Tree Sentinels who yet serve the Erdtree.\nImbued with lightning.",
+      "type": "weapon"
+    },
+    {
+      "id": "32050000",
+      "title": "Briar Greatshield",
+      "description": "Greatshield from a foreign land, used by Elemer of the Briar. Attacks with this armament utilize the iron thorns that have been wound around its frame.\nOriginates from Eochaid, a land of proudly solitary ascetics.",
+      "type": "weapon"
+    },
+    {
+      "id": "32080000",
+      "title": "Erdtree Greatshield",
+      "description": "Weighty greatshield forged of gold carried by the order of Tree Sentinels, heavily equipped knights. Blessed by an old incantation of protection.\nThe living rampart of the Erdtree, the Tree Sentinels are the standard to which all defenders of the Erdtree aspire.",
+      "type": "weapon"
+    },
+    {
+      "id": "32080100",
+      "title": "Heavy Erdtree Greatshield",
+      "description": "Shield used by Tree Sentinels.\nTreated with gold, featuring a delicate design.",
+      "type": "weapon"
+    },
+    {
+      "id": "32090000",
+      "title": "Golden Beast Crest Shield",
+      "description": "Shield of dull gold with a beast engraved as its crest. Lighter than most greatshields, and subsequently easier to wield.\nThe beast depicted is Serosh, aged counselor who guides the golden lineage.",
+      "type": "weapon"
+    },
+    {
+      "id": "32120000",
+      "title": "Jellyfish Shield",
+      "description": "The head of a spirit jellyfish, commonly found floating above sacred ground throughout the Lands Between, wielded without modification as a shield.\nThe see-through head is extremely light, but its flesh is supple, providing absolutely no protection from piercing attacks.",
+      "type": "weapon"
+    },
+    {
+      "id": "32130000",
+      "title": "Fingerprint Stone Shield",
+      "description": "A great stone shield with an intricately carved fingerprint design. One of the heaviest of all greatshields. Part of the tomb of an ancient god, the Readerless Fingers relayed their message through these imprints, said to be the very seeds from which frenzy first sprouted.",
+      "type": "weapon"
+    },
+    {
+      "id": "32140000",
+      "title": "Icon Shield",
+      "description": "Greatshield painted with a divine scene; the recipience of a blessed tear from the Erdtree. An item that looks back fondly on the age of plenty.\nThe divine scene acts in and of itself as a sacred invocation; gradually restoring the carrier's HP.",
+      "type": "weapon"
+    },
+    {
+      "id": "32150000",
+      "title": "One-Eyed Shield",
+      "description": "Tricksome shield made from white stone depicting a malformed one-eyed god. The barrel of a firearm pokes through the open mouth.\nOnce worshipped by the giants, this evil deity is believed to have been slain by Queen Marika.",
+      "type": "weapon"
+    },
+    {
+      "id": "32160000",
+      "title": "Visage Shield",
+      "description": "Tricksome bronze shield depicting the face of a Fire Giant. Several tongues leap from its open mouth.\nThe dreadful visage and burning flames are designed to remind one of the horror of facing a Fire Giant. In other words, this shield has an instructional function.",
+      "type": "weapon"
+    },
+    {
+      "id": "32170000",
+      "title": "Spiked Palisade Shield",
+      "description": "A large wooden shield covered with spikes. Though relatively light, it lacks in damage negation.\nDesigned to perform shield bashes, these attacks riddle the enemy with holes, earning it the nickname of \"pard shield.\"",
+      "type": "weapon"
+    },
+    {
+      "id": "32190000",
+      "title": "Manor Towershield",
+      "description": "An iron greatshield large enough to cover the entire body. Depicts the Roundtable Hold, gathering place of champions.\nGreatshields boast high damage negation and guard capacity, making enemy attacks easy to repel.",
+      "type": "weapon"
+    },
+    {
+      "id": "32200000",
+      "title": "Crossed-Tree Towershield",
+      "description": "An iron greatshield large enough to cover the entire body. Emblazoned with an old, interleaving tree.\nGreatshields boast high damage negation and guard capacity, making enemy attacks easy to repel.",
+      "type": "weapon"
+    },
+    {
+      "id": "32210000",
+      "title": "Inverted Hawk Towershield",
+      "description": "An iron greatshield large enough to cover the entire body. Features an inverted hawk crest.\nGreatshields boast high damage negation and guard capacity, making enemy attacks easy to repel.",
+      "type": "weapon"
+    },
+    {
+      "id": "32220000",
+      "title": "Ant's Skull Plate",
+      "description": "Huge head of one of the giant ants which inhabit the two underground rivers, used without modification as a shield. Excels at repelling enemy attacks.\nGiant ants are venomous creatures, granting a boost to immunity when wielding this shield.",
+      "type": "weapon"
+    },
+    {
+      "id": "32230000",
+      "title": "Redmane Greatshield",
+      "description": "Greatshield shaped like a fang, featuring the crest of red-maned lion. Carried by the Redmane Knights who fought alongside Radahn.",
+      "type": "weapon"
+    },
+    {
+      "id": "32240000",
+      "title": "Eclipse Crest Greatshield",
+      "description": "Metal greatshield painted with a sun in eclipse. Carried by the headless mausoleum knights.\nThe eclipsed sun, drained of color, is the protective star of soulless demigods. It aids the mausoleum knights by keeping Destined Death at bay.",
+      "type": "weapon"
+    },
+    {
+      "id": "32250000",
+      "title": "Cuckoo Greatshield",
+      "description": "Metal greatshield painted with a peering cuckoo. Carried by the enchanted knights sworn to the academy.\nBoasting high magic damage negation, this shield is used to hunt down mages.\n\"Our enemy is none other than Caria itself.\"",
+      "type": "weapon"
+    },
+    {
+      "id": "32260000",
+      "title": "Golden Greatshield",
+      "description": "Oval greatshield made of gold, carried by knights who protect the Royal Capital of Leyndell.\nKnights of Leyndell are reputed for their sturdiness, exemplified by this shield's exceptional guard capacity.",
+      "type": "weapon"
+    },
+    {
+      "id": "32270000",
+      "title": "Gilded Greatshield",
+      "description": "Metal greatshield coated with gold. Carried by knights loyal to Godrick.\nThe red tinge in the gold coat mirrors the primordial matter that became the Erdtree. The color of homeward yearning.",
+      "type": "weapon"
+    },
+    {
+      "id": "32280000",
+      "title": "Haligtree Crest Greatshield",
+      "description": "Metal greatshield depicting the Haligtree with unalloyed gold. Carried by knights who have vowed to serve Miquella's Haligtree. Possesses high holy damage negation. Yet now, with the Haligtree misshapen, this wondrous rendition is a fleeting fantasy.",
+      "type": "weapon"
+    },
+    {
+      "id": "32290000",
+      "title": "Wooden Greatshield",
+      "description": "Wooden greatshield reinforced with a metal ornamentation.\nGreatshields boast high damage negation and guard capacity, making enemy attacks easy to repel.",
+      "type": "weapon"
+    },
+    {
+      "id": "32300000",
+      "title": "Lordsworn's Shield",
+      "description": "Wooden tower shield. Lightweight for a greatshield and easy to handle.\nCommonly used in the Shattering.\nGreatshields boast high damage negation and guard capacity, making enemy attacks easy to repel.",
+      "type": "weapon"
+    },
+    {
+      "id": "33000000",
+      "title": "Glintstone Staff",
+      "description": "Staff with a glintstone embedded at the tip. A catalyst for casting sorceries.\nSorceries must be memorized first at a site of lost grace, and a staff must be equipped to cast them.",
+      "type": "weapon"
+    },
+    {
+      "id": "33040000",
+      "title": "Crystal Staff",
+      "description": "Staff fashioned from pure crystal; a deed impossible for a human. Enhances Crystalian sorceries.\nThe Crystalian's faint cogitation is known as the \"wisdom of stone.\" This staff can only be wielded by those of intellect high enough to grasp such wisdom.",
+      "type": "weapon"
+    },
+    {
+      "id": "33050000",
+      "title": "Gelmir Glintstone Staff",
+      "description": "Staff with a forked tip, embedded with red glintstones. Enhances lava sorceries.\nThe Man-Serpents of Mt. Gelmir draw from faith in addition to intelligence to enhance the potency of their sorcery.",
+      "type": "weapon"
+    },
+    {
+      "id": "33060000",
+      "title": "Demi-Human Queen's Staff",
+      "description": "Glintstone staff styled as a scepter. A gift once given to the demi-humans to foster peace, it can be wielded even by those of low intelligence.\nSneered at by fools in the academy.",
+      "type": "weapon"
+    },
+    {
+      "id": "33090000",
+      "title": "Carian Regal Scepter",
+      "description": "Magic scepter of Rennala, Queen of the Full Moon. The glintstone is known as a Carian Blue, enhancing full moon sorceries.\nOnly those of the highest intelligence may wield this, the finest of all glintstone staves.",
+      "type": "weapon"
+    },
+    {
+      "id": "33120000",
+      "title": "Digger's Staff",
+      "description": "Staff of a sorcerer-miner who extracts glintstone from crystal tunnels. The staff itself is a tool used to mine, and the ferrule is also embedded with a glintstone.\nBoosts the power of Stonedigger sorceries.",
+      "type": "weapon"
+    },
+    {
+      "id": "33130000",
+      "title": "Astrologer's Staff",
+      "description": "Staff of the astrologers. A glintstone is embedded in the tip, enabling it to be used a catalyst for sorceries.\nSorceries must be memorized first at a site of lost grace, and a staff must be equipped to cast them.",
+      "type": "weapon"
+    },
+    {
+      "id": "33170000",
+      "title": "Carian Glintblade Staff",
+      "description": "Staff embedded with a blue glintstone. One of two types of Carian staff.\nGifted to enchanted knights, it enhances Glintblade sorceries.",
+      "type": "weapon"
+    },
+    {
+      "id": "33180000",
+      "title": "Prince of Death's Staff",
+      "description": "Staff embedded with sullied amber, said to be a very part of the Prince of Death. Enhances death sorceries.\nOne of the staves deemed heretical by the academy for its ability to allow sorceries to be augmented through faith in addition to intelligence.",
+      "type": "weapon"
+    },
+    {
+      "id": "33190000",
+      "title": "Albinauric Staff",
+      "description": "Short staff with a blue glintstone embedded. Wielded by the Albinaurics of old.\nThe Albinaurics harbor a secret; they cast sorcery using their innate arcaneness.",
+      "type": "weapon"
+    },
+    {
+      "id": "33200000",
+      "title": "Academy Glintstone Staff",
+      "description": "Staff of the Academy of Raya Lucaria, embedded with a turquoise glintstone.\nOnly a recognized sorcerer is permitted to wield this staff.",
+      "type": "weapon"
+    },
+    {
+      "id": "33210000",
+      "title": "Carian Glintstone Staff",
+      "description": "Staff embedded with a blue glintstone. One of two types of Carian staff.\nGiven to sorcerers that they might enact the role of knight. Enhances Carian sword sorceries.",
+      "type": "weapon"
+    },
+    {
+      "id": "33230000",
+      "title": "Azur's Glintstone Staff",
+      "description": "Staff of the primeval glintstone sorcerer Azur. Only those who have glimpsed what lies beyond the wisdom of stone may wield it.\nReduces casting time of all sorceries, but consumes additional FP.",
+      "type": "weapon"
+    },
+    {
+      "id": "33240000",
+      "title": "Lusat's Glintstone Staff",
+      "description": "Staff of the primeval glintstone sorcerer Lusat. Only those who have glimpsed what lies beyond the wisdom of stone may wield it.\nEnhances power of all sorceries, but consumes additional FP.",
+      "type": "weapon"
+    },
+    {
+      "id": "33250000",
+      "title": "Meteorite Staff",
+      "description": "Staff embedded with a dark purple glintstone, said to be the fragment of a meteorite. Boasts high sorcery scaling and boosts gravity sorceries as well.\nHowever, this staff cannot be strengthened in any way.",
+      "type": "weapon"
+    },
+    {
+      "id": "33260000",
+      "title": "Staff of the Guilty",
+      "description": "A heretical staff fashioned from a smoldering, withered sapling that turns the blood of sacrifices pierced by it into glintstone. Similar to hex magic.\nSorceries are scaled with faith rather than intelligence when wielding this staff which enhances thorn sorceries in particular.",
+      "type": "weapon"
+    },
+    {
+      "id": "33270000",
+      "title": "Rotten Crystal Staff",
+      "description": "Staff fashioned from pure crystal; a deed impossible for a human. It festers with scarlet rot.\nEnhances Crystalian sorceries.",
+      "type": "weapon"
+    },
+    {
+      "id": "33280000",
+      "title": "Staff of Loss",
+      "description": "Staff missing its glintstone. Wielded by sorcerers who believe that discovery comes through acts of asceticism.\nThis staff is only capable of casting invisibility sorceries, but that is reason enough for some to wield it.",
+      "type": "weapon"
+    },
+    {
+      "id": "34000000",
+      "title": "Finger Seal",
+      "description": "A sacred seal bestowed by Finger Maiden which serves as a catalyst for casting sacred incantations.\nIncantations must be memorized first at a site of grace, and a sacred seal must be equipped to cast them.",
+      "type": "weapon"
+    },
+    {
+      "id": "34010000",
+      "title": "Godslayer's Seal",
+      "description": "Sacred seal of the Godskin Apostles, inlaid with obsidian.\nSaid to represent the manipulation of black flame, this catalyst enhances godslayer incantations.",
+      "type": "weapon"
+    },
+    {
+      "id": "34020000",
+      "title": "Giant's Seal",
+      "description": "Sacred seal depicting the one-eyed god of the Fire Giants, adorned with braids of red hair.\nSacred seal wielded by Fire Monks and Prelates, this catalyst enhances Giants' Flame incantations.",
+      "type": "weapon"
+    },
+    {
+      "id": "34030000",
+      "title": "Gravel Stone Seal",
+      "description": "Sacred seal made from Gravel Stone thought to be an ancient dragon scale. Enhances Dragon Cult incantations of the Royal Capital.\nThe worship of the ancient dragons does not conflict with belief in the Erdtree. After all, this seal, and lighting itself, are both imbued with gold.",
+      "type": "weapon"
+    },
+    {
+      "id": "34040000",
+      "title": "Clawmark Seal",
+      "description": "Sacred seal granted by Gurranq, the Beast Clergyman. A rare trinket which allows incantations to be scaled with strength.\nThe claw mark represents Gurranq's wrath. Enhances bestial incantations learned from Gurranq.",
+      "type": "weapon"
+    },
+    {
+      "id": "34060000",
+      "title": "Golden Order Seal",
+      "description": "A formless sacred seal depicting the ceremonial observation of Order. Enhances Golden Order Fundamentalist incantations.\nFundamentalism is scholarship in all but name. Scales incantations using both intelligence and faith.",
+      "type": "weapon"
+    },
+    {
+      "id": "34070000",
+      "title": "Erdtree Seal",
+      "description": "A formless sacred seal decorated with an Erdtree crest, once the focus of religion in the Lands Between.\nEven though the Elden Ring is shattered, and the Erdtree has dulled from its former radiance, earnest faith continues to hold the answers.",
+      "type": "weapon"
+    },
+    {
+      "id": "34080000",
+      "title": "Dragon Communion Seal",
+      "description": "Formless drakeblood seal with a dragon communion crest. Enhances Dragon Communion incantations.\nThe sacrificial devouring of the heart gives power.\nIndeed, Dragon Communion is too primal in nature for the term \"incantation\" to be appropriate.\nThis seal scales incantations with one's arcane attribute.",
+      "type": "weapon"
+    },
+    {
+      "id": "34090000",
+      "title": "Frenzied Flame Seal",
+      "description": "Formless sacred seal bestowed by the maiden of the Three Fingers. Enhances incantations of the frenzied flame.\nThis seal is the mark of the Lord of Frenzied Flame. Scales incantations using strength, dexterity, intelligence, and faith all together.",
+      "type": "weapon"
+    },
+    {
+      "id": "40000000",
+      "title": "Shortbow",
+      "description": "Small bow made to fire arrows over great distances. Other than its ability to fire off arrows in rapid succession, it is also well-suited for use on horseback.\nTo use a bow, arrows must also be equipped.",
+      "type": "weapon"
+    },
+    {
+      "id": "40010000",
+      "title": "Misbegotten Shortbow",
+      "description": "Shortbow wielded by Winged Misbegotten. Fine fur clings to it.\nDesigned to inflict additional damage by sacrificing range.",
+      "type": "weapon"
+    },
+    {
+      "id": "40020000",
+      "title": "Red Branch Shortbow",
+      "description": "Shortbow of polished red wood. Fashioned by a master craftsman and wielded by pages.\nA bow which requires dexterity rather than strength to master.",
+      "type": "weapon"
+    },
+    {
+      "id": "40030000",
+      "title": "Harp Bow",
+      "description": "Bow fashioned from a minstrel's harp. Sonorous tones still resound when firing arrows.\nTroubadours sing tales of champions, both in the honorable service of the Erdtree, and the one who spurns honor for blasphemy.",
+      "type": "weapon"
+    },
+    {
+      "id": "40050000",
+      "title": "Composite Bow",
+      "description": "Bow composited from a mix of materials.\nDemands high attributes, and is tricky to wield, but is a fearsome tool when mastered.",
+      "type": "weapon"
+    },
+    {
+      "id": "41000000",
+      "title": "Longbow",
+      "description": "Longbow made to fire arrows over great distances. Compared to a shortbow, arrows fired reach further and deal more damage.\nTo use a bow, arrows must also be equipped.",
+      "type": "weapon"
+    },
+    {
+      "id": "41010000",
+      "title": "Albinauric Bow",
+      "description": "Longbow featuring delicate silverwork. Wielded by Albinauric wolfback archers.\nThis bow requires dexterity over strength to master.",
+      "type": "weapon"
+    },
+    {
+      "id": "41020000",
+      "title": "Horn Bow",
+      "description": "Longbow made from animal horn. Wielded by the master hunters of the ancestral followers.\nImbues arrows fired with magic damage.\nReveals its true worth when used with magic-infused arrows.",
+      "type": "weapon"
+    },
+    {
+      "id": "41030000",
+      "title": "Erdtree Bow",
+      "description": "Longbow featuring Erdtree styling. In times of old, when faith and battle went hand in hand, this weapon was created in tandem with the Golden Arrow.\nScales all arrow damage with faith, revealing its true worth when used with holy-infused arrows.",
+      "type": "weapon"
+    },
+    {
+      "id": "41040000",
+      "title": "Serpent Bow",
+      "description": "Malformed bow in the shape of a pair of poisonous snakes. Imbues arrows with poison through pagan magic, revealing its true worth when used with poison-infused arrows.\nUsed by assassins known as the Formless Serpents.",
+      "type": "weapon"
+    },
+    {
+      "id": "41060000",
+      "title": "Pulley Bow",
+      "description": "Longbow which utilizes a series of pulleys and springs. The complex mechanism, which required advanced mathematical and mechanical understanding to craft, was likely made by a certain genius who learned Golden Order fundamentalism.\nEnhances precision while shooting, enabling arrows to fly much further distances.",
+      "type": "weapon"
+    },
+    {
+      "id": "41070000",
+      "title": "Black Bow",
+      "description": "Longbow carved from black wood to resemble a blade. One of the most difficult bows to master.\nThe blade-like body of the bow is light and cuts through the air. Though a longbow, it can be wielded similarly to a shortbow.",
+      "type": "weapon"
+    },
+    {
+      "id": "42000000",
+      "title": "Lion Greatbow",
+      "description": "Greatbow of black iron wielded by General Radahn. Decorated with a lion mane motif.\nImbued with gravitational power of the Starscourge, when used along with Radahn's Spear, it becomes a true weapon of a champion.",
+      "type": "weapon"
+    },
+    {
+      "id": "42010000",
+      "title": "Golem Greatbow",
+      "description": "Greatbow of black stone crafted by a civilization now gone to ruin. Weapon of the Guardian Golem.\nExtremely heavy, this greatbow requires enormous strength just to draw, suggesting it was not designed for human use.",
+      "type": "weapon"
+    },
+    {
+      "id": "42030000",
+      "title": "Erdtree Greatbow",
+      "description": "Greatbow featuring Erdtree styling. In times of old, when faith and battle went hand in hand, this weapon was created in tandem with the Golden Great Arrow.\nScales all arrow damage with faith, revealing its true worth when used with holy-infused arrows.",
+      "type": "weapon"
+    },
+    {
+      "id": "42040000",
+      "title": "Greatbow",
+      "description": "Enormous greatbow larger than any man. Can not be drawn with any ordinary level of strength, but the force of its shots is extraordinary.\nA greatbow can only fire great arrows.",
+      "type": "weapon"
+    },
+    {
+      "id": "43000000",
+      "title": "Soldier's Crossbow",
+      "description": "A crossbow of simple make, usable by anyone, but lacking in both power and accuracy.\nBolts must be equipped to use a crossbow.",
+      "type": "weapon"
+    },
+    {
+      "id": "43020000",
+      "title": "Light Crossbow",
+      "description": "Ranged weapon made from a bow fixed to a stock. Deals good damage and is simple to use, but requires reloading after firing.\nBolts must be equipped to use a crossbow.",
+      "type": "weapon"
+    },
+    {
+      "id": "43030000",
+      "title": "Heavy Crossbow",
+      "description": "Heavy crossbow with iron limbs, increasing damage dealt.\nCommonly employed in the Shattering.",
+      "type": "weapon"
+    },
+    {
+      "id": "43050000",
+      "title": "Pulley Crossbow",
+      "description": "Crossbow made with pulleys and power springs. The complex mechanism, which required advanced mathematical and mechanical understanding to craft, was likely made by a certain genius who learned Golden Order fundamentalism.\nOne touch fires a volley of bolts. Be warned; large stores of bolts can be quickly spent.",
+      "type": "weapon"
+    },
+    {
+      "id": "43060000",
+      "title": "Full Moon Crossbow",
+      "description": "One-of-a-kind enchanted crossbow of exquisitely detailed craftsmanship. Made to celebrate the matrimonial union, and reconciliation, between the houses of the Erdtree and the Full Moon, Leyndell and Raya Lucaria. The two rings dance when reloading the weapon. Reveals true worth when used with holy-infused bolts.",
+      "type": "weapon"
+    },
+    {
+      "id": "43080000",
+      "title": "Arbalest",
+      "description": "Large crossbow made from composite materials. One of the largest of all bolt-firing devices.\nIts limbs are more pliable than metallic ones, allowing bolts fired from this weapon to pierce even helms forged of steel.",
+      "type": "weapon"
+    },
+    {
+      "id": "43100000",
+      "title": "Buckshot Crossbow",
+      "description": "A weapon that combines two crossbows to scatter bolts in a wide arc.\nA crude and inaccurate weapon, yet carries considerable might for those who might wield it.",
+      "type": "weapon"
+    },
+    {
+      "id": "43110000",
+      "title": "Crepus's Black-Key Crossbow",
+      "description": "Black crossbow featuring a long stock. Used for sniping, it has a very long range.\nWeapon of Crepus, who served the Two Fingers from the shadows of the Roundtable as the head confessor.",
+      "type": "weapon"
+    },
+    {
+      "id": "44000000",
+      "title": "Hand Ballista",
+      "description": "An unconventional ballistic device modelled on a weapon used to besiege castles. Only capable of firing greatbolts.\nPerfect for reckless acts such as storming a castle or facing an entire army alone.",
+      "type": "weapon"
+    },
+    {
+      "id": "44010000",
+      "title": "Jar Cannon",
+      "description": "Jar cannon which uses explosives to fire greatbolts. Deals great damage but is slow to reload.\nExperimental firearm brought to the assault on Volcano Manor, where it was discovered that no one knew how to use it.",
+      "type": "weapon"
+    },
+    {
+      "id": "50000000",
+      "title": "Arrow",
+      "description": "Arrows used with small and long bows.\nUnremarkable in any way, shape or form.",
+      "type": "weapon"
+    },
+    {
+      "id": "50010000",
+      "title": "Fire Arrow",
+      "description": "Arrow with the tip set alight.\nDeals fire damage.",
+      "type": "weapon"
+    },
+    {
+      "id": "50020000",
+      "title": "Serpent Arrow",
+      "description": "Arrow carved to resemble a flying snake. Used in tandem with the Serpent Bow.\nLoyal minions of the Formless Serpents, their fangs are daubed with deadly poison.",
+      "type": "weapon"
+    },
+    {
+      "id": "50030000",
+      "title": "Bone Arrow (Fletched)",
+      "description": "Arrow whittled from thin animal bones. Craftable item.\nThe feather fletching adds distance to the arrow's flight.",
+      "type": "weapon"
+    },
+    {
+      "id": "50040000",
+      "title": "St. Trina's Arrow",
+      "description": "Arrow carved to resemble a withered water lily. Afflicts targets with a powerful sleep effect.\nPriests of St. Trina use these arrows to spread their teachings. The sweet oblivion of sleep can become quite the habit.",
+      "type": "weapon"
+    },
+    {
+      "id": "50060000",
+      "title": "Shattershard Arrow (Fletched)",
+      "description": "Arrow whittled from animal bones tipped with a shard of crystal. Creates a resonating noise at the point of impact.\nCraftable item. The fletching adds distance to the arrow's flight.",
+      "type": "weapon"
+    },
+    {
+      "id": "50080000",
+      "title": "Rainbow Stone Arrow (Fletched)",
+      "description": "Arrow whittled from animal bones tipped with chips of Rainbow Stone. Colored light shines at the point of impact.\nCraftable item. The fletching adds distance to the arrow's flight.",
+      "type": "weapon"
+    },
+    {
+      "id": "50090000",
+      "title": "Golden Arrow",
+      "description": "Carved arrows made in tandem with the Erdtree Bow. Deals holy damage.\nHighly effective against Those Who Live in Death, and able to prevent them from rising again.",
+      "type": "weapon"
+    },
+    {
+      "id": "50100000",
+      "title": "Dwelling Arrow",
+      "description": "Arrow in which the spirits of small animals are thought to dwell. \nDeals magic damage.\nUsed by the master hunters of the ancestral followers. ",
+      "type": "weapon"
+    },
+    {
+      "id": "50110000",
+      "title": "Bone Arrow",
+      "description": "Arrow whittled from thin animal bones. Craftable item.\nThough the tip is certainly sharp, it does not fly particularly true.",
+      "type": "weapon"
+    },
+    {
+      "id": "50130000",
+      "title": "Firebone Arrow (Fletched)",
+      "description": "Arrow whittled from animal bones. The tip is set alight before firing. Deals fire damage.\nCraftable item. The fletching adds distance to the arrow's flight.",
+      "type": "weapon"
+    },
+    {
+      "id": "50140000",
+      "title": "Firebone Arrow",
+      "description": "Arrow whittled from animal bones. The tip is set alight before firing. Deals fire damage.\nCraftable item.",
+      "type": "weapon"
+    },
+    {
+      "id": "50150000",
+      "title": "Poisonbone Arrow (Fletched)",
+      "description": "Arrow whittled from animal bones. The tip is daubed with venom. Afflicts targets with poison.\nCraftable item. The fletching adds distance to the arrow's flight.",
+      "type": "weapon"
+    },
+    {
+      "id": "50160000",
+      "title": "Poisonbone Arrow",
+      "description": "Arrow whittled from animal bones. The tip is daubed with venom. Afflicts targets with poison.\nCraftable item.",
+      "type": "weapon"
+    },
+    {
+      "id": "50170000",
+      "title": "Sleepbone Arrow (Fletched)",
+      "description": "Arrow whittled from animal bones. The tip is daubed with a water lily tincture. Afflicts targets with sleep.\nCraftable item. The fletching adds distance to the arrow's flight.",
+      "type": "weapon"
+    },
+    {
+      "id": "50180000",
+      "title": "Sleepbone Arrow",
+      "description": "Arrow whittled from animal bones. The tip is daubed with a water lily tincture. Afflicts targets with sleep.\nCraftable item.",
+      "type": "weapon"
+    },
+    {
+      "id": "50190000",
+      "title": "Stormwing Bone Arrow",
+      "description": "Arrow whittled from animal bones fletched with stormhawk feathers. Craftable item.\nFlies enshrouded in storm winds, breaking enemy stances and guards with ease.",
+      "type": "weapon"
+    },
+    {
+      "id": "50200000",
+      "title": "Lightningbone Arrow (Fletched)",
+      "description": "Arrow whittled from animal bones with a lightning-infused tip. Deals lightning damage.\nCraftable item. The fletching adds distance to the arrow's flight.",
+      "type": "weapon"
+    },
+    {
+      "id": "50210000",
+      "title": "Lightningbone Arrow",
+      "description": "Arrow whittled from animal bones with a lightning-infused tip. Deals lightning damage.\nCraftable item.",
+      "type": "weapon"
+    },
+    {
+      "id": "50220000",
+      "title": "Rainbow Stone Arrow",
+      "description": "Arrow whittled from animal bones tipped with chips of Rainbow Stone. Colored light shines at the point of impact.\nCraftable item.",
+      "type": "weapon"
+    },
+    {
+      "id": "50230000",
+      "title": "Shattershard Arrow",
+      "description": "Arrow whittled from animal bones tipped with a shard of crystal. Creates a resonating noise at the point of impact.\nCraftable item.",
+      "type": "weapon"
+    },
+    {
+      "id": "50240000",
+      "title": "Spiritflame Arrow",
+      "description": "Arrow set alight with ghostflame before firing. Deals magic damage while also afflicting foes with frost.\nUsed by the Company of the Fallen Hawk, once ordered to explore the Eternal City.",
+      "type": "weapon"
+    },
+    {
+      "id": "50250000",
+      "title": "Storm Arrow",
+      "description": "Animal bone arrow that knocks enemies away with a gust of wind.\nCraftable item.",
+      "type": "weapon"
+    },
+    {
+      "id": "50260000",
+      "title": "Magicbone Arrow (Fletched)",
+      "description": "Arrow whittled from animal bones. The tip is daubed with a glintstone tincture. Deals magic damage.\nCraftable item. The fletching adds distance to the arrow's flight.",
+      "type": "weapon"
+    },
+    {
+      "id": "50270000",
+      "title": "Magicbone Arrow",
+      "description": "Arrow whittled from animal bones. The tip is daubed with a glintstone tincture. Deals magic damage.\nCraftable item.",
+      "type": "weapon"
+    },
+    {
+      "id": "50280000",
+      "title": "Haligbone Arrow (Fletched)",
+      "description": "Arrow whittled from animal bones. The tip is daubed with a golden tincture. Deals holy damage.\nCraftable item. The fletching adds distance to the arrow's flight.",
+      "type": "weapon"
+    },
+    {
+      "id": "50290000",
+      "title": "Haligbone Arrow",
+      "description": "Arrow whittled from animal bones. The tip is daubed with a golden tincture. Deals holy damage.\nCraftable item.",
+      "type": "weapon"
+    },
+    {
+      "id": "50300000",
+      "title": "Bloodbone Arrow (Fletched)",
+      "description": "Arrow whittled from animal bones. The tip is daubed with a blood tincture. Afflicts targets with blood loss.\nCraftable item. The fletching adds distance to the arrow's flight.",
+      "type": "weapon"
+    },
+    {
+      "id": "50310000",
+      "title": "Bloodbone Arrow",
+      "description": "Arrow whittled from animal bones. The tip is daubed with a blood tincture. Afflicts targets with blood loss.\nCraftable item.",
+      "type": "weapon"
+    },
+    {
+      "id": "50320000",
+      "title": "Coldbone Arrow (Fletched)",
+      "description": "Arrow whittled from animal bones with a frozen tip. Afflicts targets with frost.\nCraftable item. The fletching adds distance to the arrow's flight.",
+      "type": "weapon"
+    },
+    {
+      "id": "50330000",
+      "title": "Coldbone Arrow",
+      "description": "Arrow whittled from animal bones with a frozen tip. Afflicts targets with frost.\nCraftable item.",
+      "type": "weapon"
+    },
+    {
+      "id": "50340000",
+      "title": "Rotbone Arrow (Fletched)",
+      "description": "Arrow whittled from animal bones. The tip is daubed with rot. Afflicts targets with scarlet rot.\nCraftable item. The fletching adds distance to the arrow's flight.",
+      "type": "weapon"
+    },
+    {
+      "id": "50350000",
+      "title": "Rotbone Arrow",
+      "description": "Arrow whittled from animal bones. The tip is daubed with rot. Afflicts targets with scarlet rot.\nCraftable item.",
+      "type": "weapon"
+    },
+    {
+      "id": "51000000",
+      "title": "Great Arrow",
+      "description": "A greatarrow as large as a spear for use with greatbows. Used by archers of monstrous strength employed by a lord's army.",
+      "type": "weapon"
+    },
+    {
+      "id": "51010000",
+      "title": "Golem's Great Arrow",
+      "description": "Greatarrow of black stone crafted by a civilization now gone to ruin. Used by the Guardian Golem.\nThis hefty arrow is enrobed in tempestuous winds, allowing it to break enemy stances and guards with ease.",
+      "type": "weapon"
+    },
+    {
+      "id": "51020000",
+      "title": "Golden Great Arrow",
+      "description": "Carved greatarrows made together with the Erdtree Greatbow. Deals holy damage.\nImbued with an oath-sworn incantation, which boosts the attack and defense of the archer and their nearby allies.",
+      "type": "weapon"
+    },
+    {
+      "id": "51030000",
+      "title": "Golem's Magic Arrow",
+      "description": "Greatarrow of black stone crafted by a civilization now gone to ruin. Imbued with its ancient magic.\nDeals magic damage.",
+      "type": "weapon"
+    },
+    {
+      "id": "51040000",
+      "title": "Radahn's Spear",
+      "description": "Greatarrows used by General Radahn during the festival of combat. These are in fact the many spears with which he was stabbed by the Cleanrot Knights.\nImbued with Radahn's gravitational power.",
+      "type": "weapon"
+    },
+    {
+      "id": "51050000",
+      "title": "Bone Great Arrow (Fletched)",
+      "description": "Greatarrow as large as a spear whittled from stout animal bones.\nCraftable item. The fletching adds distance to the arrow's flight.",
+      "type": "weapon"
+    },
+    {
+      "id": "51060000",
+      "title": "Bone Great Arrow",
+      "description": "Greatarrow as large as a spear whittled from stout animal bones.\nThough the tip is certainly sharp, it does not fly particularly true.",
+      "type": "weapon"
+    },
+    {
+      "id": "52000000",
+      "title": "Bolt",
+      "description": "Ammunition used for crossbows.\nA widespread, common type of bolt.",
+      "type": "weapon"
+    },
+    {
+      "id": "52010000",
+      "title": "Lightning Bolt",
+      "description": "Bolt tipped with a shard of Gravel Stone. Deals powerful lightning damage.\nUsed by worshippers of the ancient dragons.",
+      "type": "weapon"
+    },
+    {
+      "id": "52020000",
+      "title": "Perfumer's Bolt",
+      "description": "Bolt created with perfumer techniques. Used by nobles' guards and the like.\nThe point of impact explodes with sparks, dealing fire damage.",
+      "type": "weapon"
+    },
+    {
+      "id": "52030000",
+      "title": "Black-Key Bolt",
+      "description": "Bolts used in Crepus' Black-Key Crossbow, an assassin's tool of exquisite craftsmanship.\nThe intricate spiral tip bores deep, injecting scarlet rot far into the flesh of its target.",
+      "type": "weapon"
+    },
+    {
+      "id": "52040000",
+      "title": "Burred Bolt",
+      "description": "Bolt covered in thorns. One of the most horrific weapons used in the Shattering. Afflicts target with blood loss.\nDifficult to remove once buried in flesh, causing appalling damage to the body.",
+      "type": "weapon"
+    },
+    {
+      "id": "52050000",
+      "title": "Meteor Bolt",
+      "description": "Enchanted work of craft made in tandem with the Full Moon Crossbow. The tip is embedded with glintstone.\nLike a shooting star, these bolts leave a beautiful trail when fired. Deals magic damage.",
+      "type": "weapon"
+    },
+    {
+      "id": "52060000",
+      "title": "Explosive Bolt",
+      "description": "Bolt tipped with a shard of Explosive Stone. Explodes on impact, dealing fire damage.",
+      "type": "weapon"
+    },
+    {
+      "id": "52070000",
+      "title": "Golden Bolt",
+      "description": "Bolt blessed with an incantation of the Erdtree. Deals powerful holy damage.\nOnce used by guards of the Capital.",
+      "type": "weapon"
+    },
+    {
+      "id": "52080000",
+      "title": "Lordsworn's Bolt",
+      "description": "Well-crafted bolt with an illustrious design, wielded by regulars of a lord's army.\nDeals more damage than its commonplace cousin.",
+      "type": "weapon"
+    },
+    {
+      "id": "52090000",
+      "title": "Bone Bolt",
+      "description": "Bolt carved from a thin animal bone. Craftable item.\nThough the tip is certainly sharp, it does not fly particularly true.",
+      "type": "weapon"
+    },
+    {
+      "id": "52100000",
+      "title": "Firebone Bolt",
+      "description": "Bolt carved from animal bone. The tip is set alight before firing. Deals fire damage.\nCraftable item.",
+      "type": "weapon"
+    },
+    {
+      "id": "52110000",
+      "title": "Lightningbone Bolt",
+      "description": "Bolt crafted from animal bone with a lightning-infused tip. Deals lightning damage.\nCraftable item.",
+      "type": "weapon"
+    },
+    {
+      "id": "52120000",
+      "title": "Magicbone Bolt",
+      "description": "Bolt carved from animal bone. The tip is daubed with a glintstone tincture. Deals magic damage.\nCraftable item.",
+      "type": "weapon"
+    },
+    {
+      "id": "52130000",
+      "title": "Haligbone Bolt",
+      "description": "Bolt carved from animal bone. The tip is daubed with a golden tincture. Deals holy damage.\nCraftable item.",
+      "type": "weapon"
+    },
+    {
+      "id": "52140000",
+      "title": "Poisonbone Bolt",
+      "description": "Bolt carved from animal bone. The tip is daubed with venom. Afflicts targets with poison.\nCraftable item.",
+      "type": "weapon"
+    },
+    {
+      "id": "52150000",
+      "title": "Bloodbone Bolt",
+      "description": "Bolt carved from animal bone. The tip is daubed with a blood tincture. Afflicts targets with blood loss.\nCraftable item.",
+      "type": "weapon"
+    },
+    {
+      "id": "52160000",
+      "title": "Coldbone Bolt",
+      "description": "Bolt carved from animal bone with a frozen tip. Afflicts targets with frost.\nCraftable item.",
+      "type": "weapon"
+    },
+    {
+      "id": "52170000",
+      "title": "Rotbone Bolt",
+      "description": "Bolt carved from animal bone. The tip is daubed with rot. Afflicts targets with scarlet rot.\nCraftable item.",
+      "type": "weapon"
+    },
+    {
+      "id": "52180000",
+      "title": "Sleepbone Bolt",
+      "description": "Bolt carved from animal bone. The tip is daubed with a waterlily tincture. Afflicts targets with sleep.\nCraftable item.",
+      "type": "weapon"
+    },
+    {
+      "id": "52190000",
+      "title": "Flaming Bolt",
+      "description": "Bolt with a fiercely burned tip. Deals powerful fire damage.\nUsed by survivors of Radahn's army to stave off the scarlet rot.",
+      "type": "weapon"
+    },
+    {
+      "id": "53000000",
+      "title": "Ballista Bolt",
+      "description": "Greatbolt as large as a spear for use with Hand Ballista.",
+      "type": "weapon"
+    },
+    {
+      "id": "53010000",
+      "title": "Lightning Greatbolt",
+      "description": "Greatbolt tipped with a clump of Gravel Stone shards.\nDeals powerful lightning damage.",
+      "type": "weapon"
+    },
+    {
+      "id": "53020000",
+      "title": "Explosive Greatbolt",
+      "description": "Greatbolt tipped with a clump of Explosive Stone shards.\nDetonates a large explosion on impact, dealing fire damage.",
+      "type": "weapon"
+    },
+    {
+      "id": "53030000",
+      "title": "Bone Ballista Bolt",
+      "description": "Greatbolt as large as a spear carved from stout animal bones. Craftable item.\nThough the tip is certainly sharp, it does not fly particularly true.",
+      "type": "weapon"
     }
   ],
   "simpleLikes": [
