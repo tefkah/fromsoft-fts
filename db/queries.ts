@@ -45,6 +45,7 @@ type SearchResult = {
   rank: number;
   game: Game;
   expansion: Expansion;
+  itemType: string | null;
 };
 
 export async function searchAll(
@@ -54,19 +55,43 @@ export async function searchAll(
     game,
     expansion,
     type,
+    trx,
   }: {
     limit?: number;
     game?: Game;
     expansion?: Expansion;
     type?: 'item' | 'dialogue';
-  } = {}
+    trx: typeof db;
+  } = {
+    trx: db,
+  }
 ) {
-  const results = await db.all<SearchResult>(sql`
+  // Clean the query by balancing quotes
+  const cleanQuery = query.replace(/"/g, '').trim(); // Remove all quotes for the exact phrase
+  const exactPhrase = `"${cleanQuery.toLowerCase()}"`;
+
+  // For individual terms, handle quotes safely
+  const fuzzyTerms =
+    query
+      .toLowerCase()
+      .replace(/"([^"]*)$/g, '$1') // Remove trailing unmatched quote
+      .match(/("[^"]+"|[^\s"]+)/g)
+      ?.map((term) => {
+        // Remove any remaining unbalanced quotes and trim
+        term = term.replace(/"/g, '').trim();
+        return `"${term}"*`;
+      })
+      .join(' OR ') || '';
+
+  // Combine both with OR, but exact phrase comes first for ranking
+  const searchTerms = `${exactPhrase} OR (${fuzzyTerms})`;
+
+  const results = await trx.all<SearchResult>(sql`
     SELECT 
       search_fts.type,
       search_fts.id,
-      highlight(search_fts, 2, '<b>', '</b>') as title,
-      highlight(search_fts, 3, '<b>', '</b>') as content,
+      highlight(search_fts, 2, '<mark>', '</mark>') as title,
+      highlight(search_fts, 3, '<mark>', '</mark>') as content,
       search_fts.npc_id as npcId,
       rank,
       items.type as item_type,
@@ -77,7 +102,8 @@ export async function searchAll(
     LEFT JOIN dialogues ON dialogues.id = search_fts.id AND search_fts.type = 'dialogue'
     INNER JOIN games ON games.id = items.game_id OR games.id = dialogues.game_id
     LEFT JOIN expansions ON expansions.id = items.expansion_id OR expansions.id = dialogues.expansion_id 
-    WHERE search_fts MATCH ${query} ${type ? sql`AND search_fts.type = ${type}` : sql``} ${
+    WHERE search_fts MATCH ${searchTerms} 
+    ${type ? sql`AND search_fts.type = ${type}` : sql``} ${
       game ? sql`AND games.name = ${game}` : sql``
     } ${expansion ? sql`AND expansions.name = ${expansion}` : sql``}
     ORDER BY rank
@@ -100,13 +126,19 @@ export async function searchAll(
 // Optional: Search with filters
 export async function searchFiltered(
   query: string,
-  options?: { type?: 'item' | 'dialogue'; limit?: number }
+  options: {
+    type?: 'item' | 'dialogue';
+    limit?: number;
+    trx: typeof db;
+  } = {
+    trx: db,
+  }
 ) {
   const limit = options?.limit ?? 10;
 
   const typeFilter = options?.type ? sql`AND type = ${options.type}` : sql``;
 
-  const results = await db.all<SearchResult>(sql`
+  const results = await options.trx.all<SearchResult>(sql`
     SELECT 
       type,
       id,

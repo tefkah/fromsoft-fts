@@ -1,5 +1,5 @@
-import eldenRingBase from '../assets/data.json' assert { type: 'json' };
-import eldenRingSOTE from '../assets/data2.json' assert { type: 'json' };
+import eldenRingBase from '../assets/data.json';
+import eldenRingSOTE from '../assets/data2.json';
 import { EldenRingData, EldenRingParsedData } from 'types.js';
 import { db as dab } from './index.js';
 import {
@@ -73,23 +73,20 @@ export async function seed(db: typeof dab) {
       type: item.type,
     }))
   );
-  await db.insert(dialogues).values(
-    dialoguesData.map((dialogue) => ({
-      npcId: dialogue.npcId,
-      name: dialogue.name,
-      gameId: dialogue.gameId,
-      expansionId: dialogue.expansionId,
+
+  await db.insert(dialogues).values(dialoguesData);
+
+  const dia = await db.select().from(dialogues).all();
+  console.log(dia.slice(405));
+
+  const sectionss = dialoguesData.flatMap((dialogue, idx) =>
+    dialogue.sections.map((section) => ({
+      sectionId: section.sectionId,
+      dialogueId: idx + 1,
     }))
   );
 
-  await db.insert(dialogueSections).values(
-    dialoguesData.flatMap((dialogue, idx) =>
-      dialogue.sections.map((section) => ({
-        sectionId: section.sectionId,
-        dialogueId: idx,
-      }))
-    )
-  );
+  await db.insert(dialogueSections).values(sectionss);
 
   let counter = 0;
   await db.insert(dialogueLines).values(
@@ -97,9 +94,9 @@ export async function seed(db: typeof dab) {
       return dialogue.sections.flatMap((section) => {
         counter++;
         return section.lines.map((line) => ({
-          id: line.id,
+          lineId: line.id,
           text: line.text,
-          sectionId: counter.toString(),
+          sectionId: counter,
         }));
       });
     })
