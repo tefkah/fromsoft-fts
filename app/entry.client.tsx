@@ -4,15 +4,18 @@
  * For more information, see https://remix.run/file-conventions/entry.client
  */
 
-import { HydratedRouter } from "react-router/dom";
-import { startTransition, StrictMode } from "react";
-import { hydrateRoot } from "react-dom/client";
+import { HydratedRouter } from 'react-router/dom';
+import { startTransition, StrictMode } from 'react';
+import { hydrateRoot } from 'react-dom/client';
+import { DatabaseProvider } from './components/DatabaseContext.client.js';
 
 startTransition(() => {
   hydrateRoot(
     document,
     <StrictMode>
-      <HydratedRouter />
+      <DatabaseProvider>
+        <HydratedRouter />
+      </DatabaseProvider>
     </StrictMode>
   );
 });

@@ -1,7 +1,7 @@
 import { integer, sqliteTable, text } from 'drizzle-orm/sqlite-core';
 import { relations } from 'drizzle-orm';
 
-const GAMES = ['Elden Ring'] as const;
+const GAMES = ['Elden Ring', 'Bloodborne'] as const;
 const ITEM_TYPES = [
   'armor',
   'accessory',
@@ -19,7 +19,7 @@ export const games = sqliteTable('games', {
   name: text('name', { enum: GAMES }).notNull(),
 });
 
-const EXPANSIONS = ['Shadow of the Erdtree'] as const;
+const EXPANSIONS = ['Shadow of the Erdtree', 'Old Hunters'] as const;
 export type Expansion = (typeof EXPANSIONS)[number];
 export const expansions = sqliteTable('expansions', {
   id: integer('id').primaryKey({ autoIncrement: true }),
@@ -40,7 +40,7 @@ export const items = sqliteTable('items', {
     .references(() => games.id),
   expansionId: integer('expansion_id').references(() => expansions.id),
   type: text('type'),
-  // SQLite FTS virtual table will be created separately
+  subType: text('sub_type'),
 });
 
 // Dialogues table
@@ -70,6 +70,8 @@ export const dialogueLines = sqliteTable('dialogue_lines', {
     .notNull()
     .references(() => dialogueSections.id),
   text: text('text').notNull(),
+  original: text('original'),
+  used: integer('used', { mode: 'boolean' }).notNull().default(true),
 });
 
 // Relations
@@ -95,12 +97,6 @@ export const dialogueLineRelations = relations(dialogueLines, ({ one }) => ({
   }),
 }));
 
-// FTS (Full Text Search) virtual tables
-export const itemsFts = sqliteTable('items_fts', {
-  title: text('title'),
-  description: text('description'),
-});
-
-export const dialogueLinesFts = sqliteTable('dialogue_lines_fts', {
-  text: text('text'),
+export const version = sqliteTable('version', {
+  version: integer('version').notNull(),
 });

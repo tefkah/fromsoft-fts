@@ -5,25 +5,8 @@ import { unified } from 'unified';
 import rehypeParse from 'rehype-parse';
 import { visit } from 'unist-util-visit';
 import type { Element } from 'hast';
-import {
-  Dialogue,
-  DialogueSection,
-  EldenRingData,
-  EldenRingParsedData,
-  JsonEldenRing,
-} from 'types.js';
+import { EldenRingParsedData } from 'types.js';
 import { toString } from 'hast-util-to-string';
-
-function extractIdFromTitle(title: string): string {
-  // Extract number from brackets, e.g. "[1060]" -> "1060"
-  const match = title.match(/\[(\d+)\]$/);
-  return match ? match[1] : '';
-}
-
-function extractTitleWithoutId(title: string): string {
-  // Remove the ID portion from title, e.g. "Starscourge Heirloom [1060]" -> "Starscourge Heirloom"
-  return title.replace(/\s*\[\d+\]$/, '').trim();
-}
 
 type ElementPattern = {
   tag: 'h2' | 'h3' | 'h4' | 'p' | 'ul' | 'li';
@@ -53,27 +36,6 @@ type ExtractorResult<T> = T extends RegExp
     ? R
     : never;
 
-// type UnionToIntersection<U> = (U extends any ? (k: U) => void : never) extends (
-//   k: infer I
-// ) => void
-//   ? I
-//   : never;
-
-// type ParsedFromPattern<T extends ElementPattern[]> = UnionToIntersection<
-//   T[number] extends { extract: infer P }
-//     ? {
-//         [K in keyof P]: P[K];
-//       }
-//     : never
-// >;
-
-type AllKeys<T extends ElementPattern[]> =
-  T[number]['extract'] extends infer E extends Record<string, any>
-    ? E extends E
-      ? keyof E
-      : never
-    : never;
-
 // Helper type to merge all extract fields from patterns
 type ParsedFromPattern<T extends ElementPattern[]> =
   T[number] extends infer P extends ElementPattern
@@ -88,40 +50,10 @@ type ParsedFromPattern<T extends ElementPattern[]> =
       : never
     : never;
 
-type X = ParsedFromPattern<
-  [
-    {
-      tag: 'h3';
-      extract: {
-        id: RegExp;
-        title: (text: string) => string;
-      };
-      children: [
-        {
-          tag: 'p';
-          extract: {
-            content: (text: string) => string;
-          };
-        },
-      ];
-    },
-    {
-      tag: 'ul';
-      extract: {
-        ppn: RegExp;
-        poop: (text: string) => string;
-      };
-      children: [
-        {
-          tag: 'p';
-          extract: {
-            ak: (text: string) => string;
-          };
-        },
-      ];
-    },
-  ]
->;
+type ItemRangeConfig = {
+  default: string;
+  ranges: [number, number, string][];
+};
 
 function defineSection<
   Path extends keyof EldenRingParsedData,
@@ -137,10 +69,19 @@ function defineSection<
   return config;
 }
 
+const hardCodedSubTypes = {
+  'Fleeting Microcosm': 'sorcery',
+  'Cherishing Fingers': 'sorcery',
+  'Mass of Putrescence': 'sorcery',
+  'Vortex of Putrescence': 'sorcery',
+  'Shield of Night': 'shield:normal-shield',
+} as const;
+
 function defineItemLikeSection(
   type: string,
   matcher: RegExp,
-  typeName: string
+  typeName: string,
+  typeConfig?: ItemRangeConfig
 ) {
   return defineSection({
     type,
@@ -164,11 +105,31 @@ function defineItemLikeSection(
     ],
     resultPath: 'itemLikes',
     transform(parsed) {
+      const id = parsed.id;
+      let itemType: string;
+
+      if (!typeConfig) {
+        itemType = null;
+      } else {
+        const numericIdRaw = parseInt(id, 10);
+        // Check if it's a DLC ID (you'll need to define how to identify DLC IDs)
+        const isDlc = typeName === 'goods' ? numericIdRaw >= 2_000_000 : false; // Example threshold, adjust as needed
+        const numericId = isDlc ? numericIdRaw - 2_000_000 : numericIdRaw;
+
+        itemType =
+          hardCodedSubTypes[parsed.title] ??
+          typeConfig.ranges?.find(
+            ([min, max]) => numericId >= min && numericId <= max
+          )?.[2] ??
+          typeConfig.default;
+      }
+
       return {
         id: parsed.id,
         title: parsed.title,
         description: parsed.children?.map((child) => child.content).join('\n'),
         type: typeName,
+        subType: itemType,
       };
     },
   });
@@ -221,11 +182,11 @@ function defineSimpleLikeSection(
 }
 
 const sections = [
-  defineSimpleLikeSection('Accessory Info', /AccessoryInfo/, 'accessory info'),
+  defineSimpleLikeSection('Accessory Info', /AccessoryInfo/, 'talisman info'),
   defineItemLikeSection(
     'Accessory Name and Description',
     /AccessoryName/,
-    'accessory'
+    'talisman'
   ),
   defineSimpleLikeSection('Action Button Text', /ActionButtonText/, 'action'),
   defineItemLikeSection('ArtsName', /ArtsName/, 'art'),
@@ -241,7 +202,22 @@ const sections = [
     'consumable'
   ),
   defineSimpleLikeSection('Consumable info', /GoodsInfo/, 'consumable'),
-  defineItemLikeSection('Consumable name', /GoodsName/, 'consumable'),
+  defineItemLikeSection('Consumable name', /GoodsName/, 'goods', {
+    default: 'misc',
+    ranges: [
+      [100, 3999, 'consumable'],
+      [4000, 5999, 'sorcery'],
+      [6000, 7999, 'incantation'],
+      [8000, 8999, 'key item'],
+      [9000, 9199, 'about'],
+      [9200, 9299, 'misc'],
+      [9300, 9499, 'cookbook'],
+      [10000, 10999, 'upgrade material'],
+      [11000, 11999, 'physick'],
+      [15000, 21000, 'crafting material'],
+      [200000, 299999, 'spirit ash'],
+    ],
+  }),
   defineSimpleLikeSection('Menu Dialogues', /GR_Dialogues/, 'menu'),
   defineSimpleLikeSection('Menu buttons', /GR_KeyGuide/, 'menu'),
   defineSimpleLikeSection('GR_LineHelp', /GR_LineHelp/, 'menu'),
@@ -256,7 +232,58 @@ const sections = [
   defineSimpleLikeSection('MagicName', /MagicName/, 'magic'),
   defineSimpleLikeSection('NpcName', /NpcName/, 'npc'),
   defineSimpleLikeSection('PlaceName', /PlaceName/, 'place'),
-  defineItemLikeSection('WeaponName', /WeaponName/, 'weapon'),
+  defineItemLikeSection('WeaponName', /WeaponName/, 'weapon', {
+    default: 'weapon',
+    ranges: [
+      [100000, 199999, 'melee:unarmed'],
+      [1000000, 1999999, 'melee:dagger'],
+      [2000000, 2999999, 'melee:sword'],
+      [3000000, 3999999, 'melee:great-sword'],
+      [4000000, 4999999, 'melee:ultra-great-sword'],
+      [5000000, 5999999, 'melee:rapier'],
+      [6000000, 6999999, 'melee:great-rapier'],
+      [7000000, 7999999, 'melee:curved-sword'],
+      [8000000, 8999999, 'melee:curved-great-sword'],
+      [9000000, 9999999, 'melee:katana'],
+      [10000000, 10999999, 'melee:twinblade'],
+      [11000000, 11999999, 'melee:club'],
+      [12000000, 12999999, 'melee:great-club'],
+      [13000000, 13999999, 'melee:flail'],
+      [14000000, 14999999, 'melee:axe'],
+      [15000000, 15999999, 'melee:great-axe'],
+      [16000000, 16999999, 'melee:spear'],
+      [17000000, 17999999, 'melee:great-spear'],
+      [18000000, 18999999, 'melee:halberd'],
+      [19000000, 19999999, 'melee:scythe'],
+      [20000000, 20999999, 'melee:whip'],
+      [21000000, 21999999, 'melee:fist'],
+      [22000000, 22999999, 'melee:claw'],
+      [23000000, 23999999, 'melee:great-hammer'],
+      [24000000, 24999999, 'melee:torch'],
+      [30000000, 30999999, 'shield:small-shield'],
+      [31000000, 31999999, 'shield:normal-shield'],
+      [32000000, 32999999, 'shield:great-shield'],
+      [33000000, 33999999, 'magic:staff'],
+      [34000000, 34999999, 'magic:seal'],
+      [40000000, 40999999, 'ranged:shortbow'],
+      [41000000, 41999999, 'ranged:longbow'],
+      [42000000, 42999999, 'ranged:greatbow'],
+      [43000000, 43999999, 'ranged:crossbow'],
+      [44000000, 44999999, 'ranged:cannon'],
+      [50000000, 50999999, 'arrow:arrow'],
+      [51000000, 51999999, 'arrow:greatarrow'],
+      [52000000, 52999999, 'arrow:bolt'],
+      [53000000, 53999999, 'arrow:greatbolt'],
+      [60000000, 60999999, 'melee:kicky-arts'],
+      [61000000, 61999999, 'melee:perfume-bottle'],
+      [62000000, 62999999, 'melee:thrusting-shield'],
+      [63000000, 63999999, 'melee:smithscript-dagger'],
+      [64000000, 64999999, 'melee:backhand-blade'],
+      [66000000, 66999999, 'melee:great-katana'],
+      [67000000, 67999999, 'melee:light-greatsword'],
+      [68000000, 68999999, 'melee:beast-claw'],
+    ],
+  }),
   defineSimpleLikeSection('WeaponEffect', /WeaponEffect/, 'weapon'),
   defineSimpleLikeSection('WeaponInfo', /WeaponInfo/, 'weapon'),
   defineSimpleLikeSection('NpcName', /NpcName/, 'npc'),

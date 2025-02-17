@@ -4,9 +4,11 @@ import {
   useEffect,
   useState,
   ReactNode,
+  use,
 } from 'react';
 import {
   db,
+  getDatabaseFile,
   getDatabaseInfo,
   overwriteDatabaseFile,
   sql,
@@ -17,6 +19,7 @@ import {
   useQuery,
   type UseQueryOptions,
 } from '@tanstack/react-query';
+import { VERSION } from 'db/version.js';
 
 // Initialize QueryClient
 const queryClient = new QueryClient({
@@ -28,6 +31,21 @@ const queryClient = new QueryClient({
   },
 });
 
+const fetchDatabase = async () => {
+  const response = await fetch('/sqlite.db');
+  if (!response.ok) {
+    throw new Error('Failed to fetch database');
+  }
+
+  if (response.body === null) {
+    throw new Error('No database found');
+  }
+
+  await overwriteDatabaseFile(response.body, async () => {
+    console.log('database overwritten');
+  });
+};
+
 interface DatabaseContextType {
   db: typeof db;
   sql: typeof sql;
@@ -35,7 +53,7 @@ interface DatabaseContextType {
   error: Error | null;
 }
 
-const DatabaseContext = createContext<DatabaseContextType | null>(null);
+export const DatabaseContext = createContext<DatabaseContextType | null>(null);
 
 export function DatabaseProvider({ children }: { children: ReactNode }) {
   const [initialized, setInitialized] = useState(false);
@@ -45,16 +63,22 @@ export function DatabaseProvider({ children }: { children: ReactNode }) {
     async function initializeDb() {
       try {
         try {
-          await getDatabaseInfo();
-          setInitialized(true);
-          return;
-        } catch {
-          const response = await fetch('/sqlite.db');
-          if (!response.ok) {
-            throw new Error('Failed to fetch database');
+          if (initialized) {
+            return;
           }
-          const blob = await response.blob();
-          await overwriteDatabaseFile(blob);
+
+          const version = await sql`SELECT version FROM version LIMIT 1`;
+          if (version[0].version === VERSION) {
+            console.log('database is up to date');
+            setInitialized(true);
+            return; // no need to continue
+          }
+
+          await fetchDatabase();
+          setInitialized(true);
+        } catch (e) {
+          console.error('Failed once', e);
+          await fetchDatabase();
           setInitialized(true);
         }
       } catch (err) {
@@ -66,20 +90,27 @@ export function DatabaseProvider({ children }: { children: ReactNode }) {
       }
     }
 
-    initializeDb();
+    // Only run initialization on client
+    if (typeof window !== 'undefined') {
+      initializeDb();
+    }
   }, []);
 
   if (error) {
-    return <div>Failed to initialize database: {error.message}</div>;
-  }
-
-  if (!initialized) {
-    return <div>Initializing database...</div>;
+    console.error(error);
+    return null;
   }
 
   return (
     <QueryClientProvider client={queryClient}>
-      <DatabaseContext.Provider value={{ db, sql, initialized, error }}>
+      <DatabaseContext.Provider
+        value={{
+          db,
+          sql,
+          initialized: typeof window === 'undefined' ? false : initialized,
+          error,
+        }}
+      >
         {children}
       </DatabaseContext.Provider>
     </QueryClientProvider>
@@ -87,7 +118,7 @@ export function DatabaseProvider({ children }: { children: ReactNode }) {
 }
 
 export function useDatabase() {
-  const context = useContext(DatabaseContext);
+  const context = use(DatabaseContext);
   if (!context) {
     throw new Error('useDatabase must be used within a DatabaseProvider');
   }
@@ -96,21 +127,24 @@ export function useDatabase() {
 
 // Generic type for database queries
 type DbQuery<TResult> = (opts: {
-  db: typeof import('../../db/sqlocal.client.js').db;
-  sql: typeof import('../../db/sqlocal.client.js').sql;
+  db: typeof db;
+  sql: typeof sql;
 }) => Promise<TResult>;
 
-// Hook for database queries using React Query
 export function useDbQuery<TResult>(
-  queryKey: string | readonly unknown[],
+  key: unknown[],
   queryFn: DbQuery<TResult>,
   options?: Omit<UseQueryOptions<TResult, Error>, 'queryKey' | 'queryFn'>
 ) {
-  const { db, sql } = useDatabase();
+  const context = useDatabase();
 
   return useQuery({
-    queryKey: Array.isArray(queryKey) ? queryKey : [queryKey],
-    queryFn: () => queryFn({ db, sql }),
+    queryKey: key,
+    queryFn: () => queryFn(context),
+    enabled:
+      typeof window !== 'undefined' &&
+      context.initialized &&
+      !!options?.enabled,
     ...options,
   });
 }

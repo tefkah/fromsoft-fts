@@ -31,21 +31,29 @@ export type EldenRingParsedData = {
   dialogue: DialogueLike[];
 };
 
-type DialogueLike = {
+export type DialogueLike = {
   npcId: string;
   name?: string;
   sections: DialogueSection[];
 };
 
-type ItemLike = {
+export type ItemLike = {
   id: string;
   title: string;
   description: string;
   type: string;
+  subType: string | null;
 };
 
 type SimpleLike = {
   id: string;
   description: string;
   type: string;
+};
+
+export type ItemRange = {
+  startId: number;
+  endId: number;
+  type: string;
+  subType: string;
 };

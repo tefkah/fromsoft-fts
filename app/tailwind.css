@@ -10,3 +10,82 @@ body {
     color-scheme: dark;
   }
 }
+
+@layer base {
+  :root {
+    /* Neutral theme */
+    --background: 240 10% 3.9%;
+    --foreground: 0 0% 98%;
+    --card: 240 10% 3.9%;
+    --card-foreground: 0 0% 98%;
+    --popover: 240 10% 3.9%;
+    --popover-foreground: 0 0% 98%;
+    --primary: 0 0% 98%;
+    --primary-foreground: 240 5.9% 10%;
+    --secondary: 240 3.7% 15.9%;
+    --secondary-foreground: 0 0% 98%;
+    --muted: 240 3.7% 15.9%;
+    --muted-foreground: 240 5% 64.9%;
+    --accent: 240 3.7% 15.9%;
+    --accent-foreground: 0 0% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 240 3.7% 15.9%;
+    --input: 240 3.7% 15.9%;
+    --ring: 240 4.9% 83.9%;
+    --radius: 0.5rem;
+  }
+
+  :root[class~='elden-ring'] {
+    --background: 0 0% 6%;
+    --foreground: 36 37% 61%;
+    --card: 0 0% 10%;
+    --card-foreground: 36 37% 61%;
+    --popover: 0 0% 10%;
+    --popover-foreground: 36 37% 61%;
+    --primary: 36 37% 61%;
+    --primary-foreground: 0 0% 6%;
+    --secondary: 0 0% 10%;
+    --secondary-foreground: 36 37% 61%;
+    --muted: 0 0% 10%;
+    --muted-foreground: 36 16% 58%;
+    --accent: 0 0% 13%;
+    --accent-foreground: 36 37% 61%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 36 37% 61%;
+    --input: 36 37% 61%;
+    --ring: 36 37% 61%;
+  }
+
+  :root[class~='bloodborne'] {
+    --background: 0 0% 10%;
+    --foreground: 0 100% 27%;
+    --card: 0 0% 16%;
+    --card-foreground: 0 100% 27%;
+    --popover: 0 0% 16%;
+    --popover-foreground: 0 100% 27%;
+    --primary: 0 100% 27%;
+    --primary-foreground: 0 0% 10%;
+    --secondary: 0 0% 16%;
+    --secondary-foreground: 0 100% 27%;
+    --muted: 0 0% 16%;
+    --muted-foreground: 0 29% 29%;
+    --accent: 0 0% 23%;
+    --accent-foreground: 0 100% 27%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 0 100% 27%;
+    --input: 0 100% 27%;
+    --ring: 0 100% 27%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}

@@ -27,6 +27,12 @@ console.log('Generating JSON');
 // await generateJson();
 console.log('✅ JSON generated');
 
+console.log('Setting up FTS');
+for (const statement of setupFTS(sql)) {
+  await db.run(statement);
+}
+console.log('✅ FTS setup');
+
 console.log('Seeding database');
 try {
   await seed(db);
@@ -35,9 +41,3 @@ try {
   console.error(e);
   process.exit(1);
 }
-
-console.log('Setting up FTS');
-for (const statement of setupFTS(sql)) {
-  await db.run(statement);
-}
-console.log('✅ FTS setup');

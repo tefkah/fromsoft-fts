@@ -1,6 +1,15 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 import eldenRingBase from '../assets/data.json';
 import eldenRingSOTE from '../assets/data2.json';
-import { EldenRingData, EldenRingParsedData } from 'types.js';
+import bloodborneItems from '../assets/bloodborne/items.json';
+import bloodborneDialogue from '../assets/bloodborne/bloodborne-dialogue.json';
+
+import {
+  DialogueLike,
+  EldenRingData,
+  EldenRingParsedData,
+  ItemLike,
+} from 'types.js';
 import { db as dab } from './index.js';
 import {
   dialogueLines,
@@ -9,10 +18,15 @@ import {
   expansions,
   games,
   items,
+  version,
 } from './schema.js';
+import { VERSION } from './version.js';
 
 const eldenRingData: EldenRingParsedData = eldenRingBase;
 const eldenRingSOTEData: EldenRingParsedData = eldenRingSOTE;
+
+const bloodborneItemsData: ItemLike[] = bloodborneItems;
+const bloodborneDialogueData = bloodborneDialogue;
 
 export async function seed(db: typeof dab) {
   // delete all rows
@@ -20,19 +34,34 @@ export async function seed(db: typeof dab) {
   await db.delete(dialogues).execute();
   await db.delete(dialogueSections).execute();
   await db.delete(dialogueLines).execute();
+  await db.delete(version).execute();
+
+  await db.insert(version).values({ version: VERSION });
 
   const gameId = await db
     .insert(games)
-    .values({ name: 'Elden Ring' })
+    .values([
+      { name: 'Elden Ring' },
+      {
+        name: 'Bloodborne',
+      },
+    ])
     .returning({ id: games.id });
   const expansionId = await db
     .insert(expansions)
-    .values({ gameId: gameId[0].id, name: 'Shadow of the Erdtree' })
+    .values([
+      { gameId: gameId[0].id, name: 'Shadow of the Erdtree' },
+      {
+        gameId: gameId[1].id,
+        name: 'Old Hunters',
+      },
+    ])
     .returning({ id: expansions.id });
 
   const itemsData = [
     eldenRingData.itemLikes,
     eldenRingSOTEData.itemLikes,
+    bloodborneItemsData,
   ].flatMap((items, idx) =>
     items.map((item) => {
       return {
@@ -40,9 +69,10 @@ export async function seed(db: typeof dab) {
         title: item.title,
         description: item.description,
         // image: item.image,
-        gameId: gameId[0].id,
-        expansionId: idx === 0 ? null : expansionId[0].id,
+        gameId: idx < 2 ? gameId[0].id : gameId[1].id,
+        expansionId: idx === 1 ? expansionId[0].id : null,
         type: item.type,
+        subType: item.subType,
       };
     })
   );
@@ -71,22 +101,49 @@ export async function seed(db: typeof dab) {
       gameId: item.gameId,
       expansionId: item.expansionId,
       type: item.type,
+      subType: item.subType,
     }))
   );
 
-  await db.insert(dialogues).values(dialoguesData);
+  const eldenRingDialogues = await db
+    .insert(dialogues)
+    .values(dialoguesData)
+    .returning({ id: dialogues.id });
 
-  const dia = await db.select().from(dialogues).all();
-  console.log(dia.slice(405));
+  const bloodborneDialogues = await db
+    .insert(dialogues)
+    .values(
+      bloodborneDialogueData.map((dialogue, idx) => ({
+        npcId: (idx + 10000).toString(),
+        name: dialogue.name,
+        gameId: gameId[1].id,
+        expansionId: null,
+      }))
+    )
+    .returning({ id: dialogues.id });
 
-  const sectionss = dialoguesData.flatMap((dialogue, idx) =>
+  const eldenRingSectionsData = dialoguesData.flatMap((dialogue, idx) =>
     dialogue.sections.map((section) => ({
       sectionId: section.sectionId,
-      dialogueId: idx + 1,
+      dialogueId: eldenRingDialogues[idx].id,
     }))
   );
+  const eldenRingSections = await db
+    .insert(dialogueSections)
+    .values(eldenRingSectionsData)
+    .returning({ id: dialogueSections.id });
 
-  await db.insert(dialogueSections).values(sectionss);
+  const bloodborneSectionsData = bloodborneDialogueData.flatMap(
+    (dialogue, idx) => ({
+      sectionId: (1_000_000 + idx).toString(),
+      dialogueId: bloodborneDialogues[idx].id,
+    })
+  );
+
+  const bloodborneSections = await db
+    .insert(dialogueSections)
+    .values(bloodborneSectionsData)
+    .returning({ id: dialogueSections.id });
 
   let counter = 0;
   await db.insert(dialogueLines).values(
@@ -98,6 +155,20 @@ export async function seed(db: typeof dab) {
           text: line.text,
           sectionId: counter,
         }));
+      });
+    })
+  );
+
+  await db.insert(dialogueLines).values(
+    bloodborneDialogueData.flatMap((dialogue, idx) => {
+      return dialogue.lines.flatMap((line, lineIdx) => {
+        return {
+          lineId: (1_000_000 + idx).toString() + (lineIdx + 1).toString(),
+          text: line.text,
+          sectionId: bloodborneSections[idx].id,
+          original: line.original,
+          used: line.used,
+        };
       });
     })
   );

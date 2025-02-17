@@ -94,6 +94,7 @@ export async function searchAll(
       highlight(search_fts, 3, '<mark>', '</mark>') as content,
       search_fts.npc_id as npcId,
       rank,
+      items.sub_type as item_sub_type,
       items.type as item_type,
       games.name as game,
       expansions.name as expansion

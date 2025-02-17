@@ -1,8 +1,10 @@
-import { getDatabaseInfo } from 'db/sqlocal.client.js';
-
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import { searchAll } from 'app/components/queries.client.js';
-import { db, overwriteDatabaseFile } from '../../db/sqlocal.client.js';
+import {
+  db,
+  overwriteDatabaseFile,
+  getDatabaseInfo,
+} from '../../db/sqlocal.client.js';
 
 import { useEffect, useState, useCallback } from 'react';
 
