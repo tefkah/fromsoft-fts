@@ -1,4 +1,4 @@
-import { memo, useDeferredValue } from 'react';
+import { memo, useDeferredValue, useState } from 'react';
 import { useDbQuery } from './DatabaseContext.client.js';
 import { useSearchParams } from '../hooks/useSearchParams.js';
 import { useNavigate } from 'react-router';
@@ -29,7 +29,7 @@ export function GameSearch({
     sortBy: 'relevance',
   });
   console.log('params', params);
-  const deferredQuery = useDeferredValue(params.query);
+
   const navigate = useNavigate();
 
   const handleGameChange = (newGame: string) => {
@@ -85,7 +85,7 @@ export function GameSearch({
                 placeholder="Weapon Type"
                 label="Weapon Type"
               />
-            )} */}
+            )}  */}
             <ThemedSelect
               value={params.sortBy || 'relevance'}
               onChange={(value) => setParams({ sortBy: value })}
@@ -100,12 +100,17 @@ export function GameSearch({
             type="search"
             value={params.query}
             placeholder="Search items or dialogues..."
-            onChange={(e) => setParams({ query: e.target.value, page: '1' })}
+            onChange={(e) =>
+              setParams({
+                query: e.target.value,
+                page: '1',
+              })
+            }
           />
         </div>
 
         <SearchResults
-          query={deferredQuery}
+          query={params.query}
           game={game}
           filters={params}
           page={parseInt(params.page || '1')}
@@ -129,6 +134,8 @@ const SearchResults = memo(function SearchResults({
   page: number;
   onPageChange: (page: number) => void;
 }) {
+  console.log('rendering');
+
   const { data: searchResults, isLoading } = useDbQuery(
     ['search', query, game, filters, page],
     async ({ db, sql: sql2 }) => {
@@ -166,10 +173,6 @@ const SearchResults = memo(function SearchResults({
               ? sql`COALESCE(items.sub_type, items.type, search_fts.type), title`
               : sql`rank`;
 
-        const whereClause = conditions.length
-          ? sql`${sql.join(conditions, sql` AND `)}`
-          : sql``;
-
         const searchQuery = db
           .selectFrom('search_fts')
           .leftJoin(
@@ -190,7 +193,10 @@ const SearchResults = memo(function SearchResults({
                   'expansions.name as expansion',
                 ])
                 .as('full_items'),
-            (join) => join.onRef('full_items.id', '=', 'search_fts.id')
+            (join) =>
+              join
+                .onRef('full_items.id', '=', 'search_fts.id')
+                .on('search_fts.type', '=', 'item')
           )
           .leftJoin(
             (qb) =>
@@ -223,7 +229,10 @@ const SearchResults = memo(function SearchResults({
                 ])
                 // .where('dialogue_lines.id', '=', 'search_fts.id')
                 .as('full_dialogue_lines'),
-            (join) => join.onRef('full_dialogue_lines.id', '=', 'search_fts.id')
+            (join) =>
+              join
+                .onRef('full_dialogue_lines.id', '=', 'search_fts.id')
+                .on('search_fts.type', '=', 'dialogue')
           )
           .select((eb) => [
             'search_fts.id',
@@ -311,7 +320,8 @@ const SearchResults = memo(function SearchResults({
                     : result.type}
                 </span>
                 <span className="text-sm text-muted-foreground">
-                  {result.game_name} • {result.expansion_name}
+                  {result.game_name}
+                  {result.expansion_name ? ` • ${result.expansion_name}` : null}
                 </span>
               </div>
               <h2

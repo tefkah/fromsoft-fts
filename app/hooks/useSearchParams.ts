@@ -17,8 +17,6 @@ export function useSearchParams<T extends Record<string, string>>(
     return Object.fromEntries(urlParams.entries()) as T;
   });
 
-  console.log('paramsins', params);
-
   // Sync URL with state, but only when params change
   useEffect(() => {
     const urlParams = new URLSearchParams();
@@ -34,10 +32,17 @@ export function useSearchParams<T extends Record<string, string>>(
     });
 
     const search = urlParams.toString();
-    const newUrl = search ? `?${search}` : location.pathname;
+    const newUrl = search
+      ? `${location.pathname}?${search}`
+      : location.pathname;
 
-    if (newUrl !== location.pathname + location.search) {
-      navigate(newUrl, { replace: true });
+    const oldUrl = `${location.pathname}${location.search}`;
+
+    if (newUrl !== oldUrl) {
+      console.log('newUrl', newUrl);
+      navigate(newUrl, {
+        replace: true,
+      });
     }
   }, [params, navigate, location.pathname, location.search, defaultParams]);
 
