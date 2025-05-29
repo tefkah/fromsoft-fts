@@ -4,7 +4,7 @@ import { DatabaseProvider } from './components/DatabaseContext.client.js';
 
 import './tailwind.css';
 
-import { Analytics } from '@vercel/analytics/remix';
+import { Analytics } from '@vercel/analytics/react';
 
 export default function Root() {
   const theme = useGameTheme();
