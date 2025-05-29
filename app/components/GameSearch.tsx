@@ -422,10 +422,12 @@ const SearchResults = memo(function SearchResults({
                     loading="lazy"
                     src={`/icons/${
                       result.expansion_name ? 'Shadow of the Erdtree DLC/' : ''
-                    }${itemLikeToFolderName(result)}/${result.title
-                      ?.replace("'", '_')
-                      ?.replace(':', '_')
-                      .replace(/<[^>]*>?/gm, '')}.avif`}
+                    }${itemLikeToFolderName(result)}/${encodeURIComponent(
+                      result.title
+                        ?.replace("'", '_')
+                        ?.replace(':', '_')
+                        .replace(/<[^>]*>?/gm, '')
+                    )}.avif`}
                     alt={result.title}
                     className="object-contain flex-shrink-1 flex-grow-0 p-2 border"
                   />
