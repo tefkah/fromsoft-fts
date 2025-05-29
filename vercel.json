@@ -10,10 +10,6 @@
         {
           "key": "Cross-Origin-Opener-Policy",
           "value": "same-origin"
-        },
-        {
-          "key": "X-Test-Header",
-          "value": "test-value"
         }
       ]
     },
@@ -22,11 +18,7 @@
       "headers": [
         {
           "key": "Cache-Control",
-          "value": "maxage=31536000, immutable"
-        },
-        {
-          "key": "X-Test-Header",
-          "value": "test-value-2"
+          "value": "max-age=2592000, immutable"
         }
       ]
     }

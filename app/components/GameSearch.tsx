@@ -190,7 +190,6 @@ const itemLikeToFolderName = (item: {
   itemType: ItemType;
   itemSubType: string;
 }) => {
-  console.log('item', item);
   if (!item) {
     return;
   }
@@ -225,8 +224,6 @@ const SearchResults = memo(function SearchResults({
   page: number;
   onPageChange: (page: number) => void;
 }) {
-  console.log('rendering');
-
   const { data: searchResults, isLoading } = useDbQuery(
     ['search', query, game, filters, page],
     async ({ db, sql: sql2 }) => {
@@ -358,12 +355,7 @@ const SearchResults = memo(function SearchResults({
           .limit(1000)
           .orderBy('rank');
 
-        // console.log(searchQuery.compile().sql);
-        const start = performance.now();
         const results = await searchQuery.execute();
-        const end = performance.now();
-        console.log(`Drizzle: Time taken: ${end - start} milliseconds`);
-        console.log(results);
         return {
           results,
           more: false,
