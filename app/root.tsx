@@ -1,6 +1,6 @@
 import { Links, Meta, Outlet, Scripts, ScrollRestoration } from 'react-router';
-import { useGameTheme } from './utils/theme.client';
-import { DatabaseProvider } from './components/DatabaseContext.client';
+import { useGameTheme } from './utils/theme.client.js';
+import { DatabaseProvider } from './components/DatabaseContext.client.js';
 
 import './tailwind.css';
 
