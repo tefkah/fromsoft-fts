@@ -18,11 +18,15 @@
       ]
     },
     {
-      "source": "/(.*).[js|css|wasm|avif]",
+      "source": "/(.*)\\.(js|css|wasm|avif)",
       "headers": [
         {
           "key": "Cache-Control",
           "value": "s-maxage=31536000, stale-while-revalidate=86400, immutable"
+        },
+        {
+          "key": "X-Test-Header",
+          "value": "test-value-2"
         }
       ]
     }
