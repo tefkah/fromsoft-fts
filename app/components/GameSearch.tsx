@@ -29,7 +29,6 @@ export function GameSearch({
     page: '1',
     sortBy: 'relevance',
   });
-  console.log('params', params);
 
   const navigate = useNavigate();
 
