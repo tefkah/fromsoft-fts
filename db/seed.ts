@@ -1,8 +1,8 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
-import eldenRingBase from '../assets/data.json';
-import eldenRingSOTE from '../assets/data2.json';
-import bloodborneItems from '../assets/bloodborne/items.json';
-import bloodborneDialogue from '../assets/bloodborne/bloodborne-dialogue.json';
+import eldenRingBase from '../assets/data.json' with { type: 'json' };
+import eldenRingSOTE from '../assets/data2.json' with { type: 'json' };
+import bloodborneItems from '../assets/bloodborne/items.json' with { type: 'json' };
+import bloodborneDialogue from '../assets/bloodborne/bloodborne-dialogue.json' with { type: 'json' };
 
 import {
   DialogueLike,

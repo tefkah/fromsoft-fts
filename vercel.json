@@ -1,7 +1,7 @@
 {
   "headers": [
     {
-      "source": "/(.*)",
+      "source": "/worker-.*",
       "headers": [
         {
           "key": "Cross-Origin-Embedder-Policy",
@@ -10,6 +10,10 @@
         {
           "key": "Cross-Origin-Opener-Policy",
           "value": "same-origin"
+        },
+        {
+          "key": "X-Test-Header",
+          "value": "test-value"
         }
       ]
     }
