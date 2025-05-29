@@ -26,6 +26,16 @@ import { GameSearch } from '../components/GameSearch.js';
 //   return normalTypeToFolderName[item.itemType];
 // };
 
+export const meta = () => {
+  return [
+    { title: 'Bloodborne Search' },
+    {
+      name: 'description',
+      content: 'Search through items and dialogues from Bloodborne',
+    },
+  ];
+};
+
 export default function BloodbornePage() {
   return (
     <GameSearch
