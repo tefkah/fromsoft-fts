@@ -191,6 +191,7 @@ const itemLikeToFolderName = (item: {
   itemType: ItemType;
   itemSubType: string;
 }) => {
+  console.log('item', item);
   if (!item) {
     return;
   }
@@ -422,25 +423,24 @@ const SearchResults = memo(function SearchResults({
                 }}
               />
 
-              <div className="flex items-center gap-2">
+              <div className="flex items-start gap-2 mt-2">
                 {result.type === 'item' && (
-                  <div className="w-20 h-20 p-2 border">
-                    <img
-                      src={`/icons/${
-                        result.expansion_name
-                          ? '/Shadow of the Erdtree DLC/'
-                          : ''
-                      }${itemLikeToFolderName(result)}/${result.title
-                        ?.replace("'", '_')
-                        ?.replace(':', '_')
-                        .replace(/<[^>]*>?/gm, '')}.png`}
-                      alt={result.title}
-                      className="w-full h-full object-cover"
-                    />
-                  </div>
+                  <img
+                    width={80}
+                    height={80}
+                    loading="lazy"
+                    src={`/icons/${
+                      result.expansion_name ? 'Shadow of the Erdtree DLC/' : ''
+                    }${itemLikeToFolderName(result)}/${result.title
+                      ?.replace("'", '_')
+                      ?.replace(':', '_')
+                      .replace(/<[^>]*>?/gm, '')}.avif`}
+                    alt={result.title}
+                    className="object-contain flex-shrink-1 flex-grow-0 p-2 border"
+                  />
                 )}
                 <p
-                  className="mt-2 leading-relaxed"
+                  className="leading-relaxed"
                   dangerouslySetInnerHTML={{ __html: result.content }}
                 />
               </div>
