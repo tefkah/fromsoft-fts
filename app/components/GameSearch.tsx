@@ -6,7 +6,8 @@ import { filterConfig, type FilterValues } from '../config/filters.js';
 import { ThemedSelect } from './ThemedSelect.js';
 import { ThemedInput } from './ThemedInput.js';
 import { sql } from 'kysely';
-import { Game } from 'db/schema.js';
+import { Game, ItemType } from 'db/schema.js';
+import { EldenRingParsedData } from 'types.js';
 
 const ITEMS_PER_PAGE = 20;
 
@@ -120,6 +121,96 @@ export function GameSearch({
     </div>
   );
 }
+
+const folderNameToItemType = {
+  'Bolstering Materials': 'upgrade material',
+  Consumables: 'consumable',
+  'Crafting Materials': 'crafting material',
+  Incantations: 'incantation',
+  'Key Items': 'key item',
+  Sorceries: 'sorcery',
+  Talisman: 'talisman',
+  'Ranged Weapons-Catalysts': 'weapon',
+  'Spirit Ashes': 'spirit ash',
+  Talismans: 'talisman',
+  Tools: 'consumable',
+};
+
+const goodsTypeToFolderName = {
+  'upgrade material': 'Bolstering Materials',
+  consumable: 'Tools',
+  'crafting material': 'Crafting Materials',
+  incantation: 'Incantations',
+  'key item': 'Key Items',
+  physick: 'Key Items',
+  sorcery: 'Sorceries',
+  talisman: 'Talismans',
+  'spirit ash': 'Spirit Ashes',
+  cookbook: 'Key Items',
+  armor: 'Armor',
+} as const;
+
+const weaponTypeToFolderName = {
+  ranged: 'Ranged Weapons-Catalysts',
+  magic: 'Ranged Weapons-Catalysts',
+  melee: 'Melee Armaments',
+  shield: 'Shields',
+  arrow: 'Arrows-Bolts',
+} as const;
+
+const normalTypeToFolderName = {
+  goods: 'Key Items',
+  armor: 'Armor',
+  ash: 'Ashes of War',
+  talisman: 'Talismans',
+} as const;
+
+type FolderName =
+  | (typeof normalTypeToFolderName)[keyof typeof normalTypeToFolderName]
+  | (typeof weaponTypeToFolderName)[keyof typeof weaponTypeToFolderName]
+  | (typeof goodsTypeToFolderName)[keyof typeof goodsTypeToFolderName];
+
+const folderItems = {
+  Armor: [],
+  'Arrows-Bolts': [],
+  'Ashes of War': [],
+  'Bolstering Materials': [],
+  'Crafting Materials': [],
+  Incantations: [],
+  'Key Items': [],
+  'Melee Armaments': [],
+  'Ranged Weapons-Catalysts': [],
+  Shields: [],
+  'Spirit Ashes': [],
+  Sorceries: [],
+  Talismans: [],
+  Tools: [],
+} as Record<FolderName, EldenRingParsedData['itemLikes']>;
+
+const itemLikeToFolderName = (item: {
+  itemType: ItemType;
+  itemSubType: string;
+}) => {
+  if (!item) {
+    return;
+  }
+
+  if (item.itemType === 'weapon') {
+    return weaponTypeToFolderName[
+      item.itemSubType.split(':')[0] as keyof typeof weaponTypeToFolderName
+    ];
+  }
+
+  if (item.itemType === 'goods') {
+    return goodsTypeToFolderName[
+      item.itemSubType as keyof typeof goodsTypeToFolderName
+    ];
+  }
+
+  return normalTypeToFolderName[
+    item.itemType as keyof typeof normalTypeToFolderName
+  ];
+};
 
 const SearchResults = memo(function SearchResults({
   query,
@@ -264,7 +355,7 @@ const SearchResults = memo(function SearchResults({
           .$if(!!filters.weaponType, (q) =>
             q.where('full_items.sub_type', '=', filters.weaponType!)
           )
-          .limit(10)
+          .limit(1000)
           .orderBy('rank');
 
         // console.log(searchQuery.compile().sql);
@@ -334,16 +425,18 @@ const SearchResults = memo(function SearchResults({
               <div className="flex items-center gap-2">
                 {result.type === 'item' && (
                   <div className="w-20 h-20 p-2 border">
-                    {/* <img
+                    <img
                       src={`/icons/${
-                        result.expansion ? '/Shadow of the Erdtree DLC/' : ''
+                        result.expansion_name
+                          ? '/Shadow of the Erdtree DLC/'
+                          : ''
                       }${itemLikeToFolderName(result)}/${result.title
                         ?.replace("'", '_')
                         ?.replace(':', '_')
                         .replace(/<[^>]*>?/gm, '')}.png`}
                       alt={result.title}
                       className="w-full h-full object-cover"
-                    /> */}
+                    />
                   </div>
                 )}
                 <p
