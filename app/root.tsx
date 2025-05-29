@@ -4,6 +4,8 @@ import { DatabaseProvider } from './components/DatabaseContext.client.js';
 
 import './tailwind.css';
 
+import { Analytics } from '@vercel/analytics/remix';
+
 export default function Root() {
   const theme = useGameTheme();
 
@@ -21,6 +23,7 @@ export default function Root() {
         </DatabaseProvider>
         <ScrollRestoration />
         <Scripts />
+        <Analytics />
       </body>
     </html>
   );
